@@ -27,7 +27,7 @@ namespace BackEnd.Controllers
                 //uma boa prática seria usar DI (Injeção de dependência)
                 //mas não é o foco do artigo
 
-                var userExists = new UserRepository().GetByEmail(user.Ni);
+                var userExists = new UserRepository().GetByNi(user.Ni);
 
                 if (userExists == null)
                     return BadRequest(new { Message = "Ni e/ou senha está(ão) inválido(s)." });

@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+using BackEnd.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +8,28 @@ namespace BackEnd.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        [HttpPost]
+
+        #region Criar Usuario
+        public async Task<IActionResult<User>> PostUser(User user)
+        {
+            _context.User.Add(User);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(PostUser), new { id = User.Id }, user)
+        }
+        #endregion
+
+
+        #region Mostrar usuarios
+
+        [HttpGet]
+        public async Task<IActionResult<User>> GetUsers(User user)
+        {
+            return await _context.User.ToListAsync();
+        }
+        #endregion
+
         [HttpGet]
         [Route("/api/v1/user/employee")]
         [Authorize]

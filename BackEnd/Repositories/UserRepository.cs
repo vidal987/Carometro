@@ -6,9 +6,9 @@ namespace BackEnd.Repositories
 {
     public class UserRepository
     {
-        public User GetByEmail(string ni)
+        public User GetByNi(string ni)
         {
-            return Users.Where(x => x.Ni.ToLower() == ni.ToLower())
+            return User.Where(x => x.Ni.ToLower() == ni.ToLower())
                 .FirstOrDefault();
         }
     }
