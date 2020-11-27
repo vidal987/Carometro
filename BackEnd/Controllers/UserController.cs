@@ -16,7 +16,7 @@ namespace BackEnd.Controllers
             _context.User.Add(User);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(PostUser), new { id = User.Id }, user)
+            return CreatedAtAction(nameof(PostUser), new { id = User.Id }, user);
         }
         #endregion
 
