@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+
 
 namespace Carometro.Api
 {
@@ -22,6 +24,7 @@ namespace Carometro.Api
         {
             services.AddDbContext<DataContext>(options => options.UseMySql(Configuration.GetConnectionString("Default")));
             services.AddControllers();
+
             services.AddSwaggerGen();
         }
 
@@ -31,13 +34,13 @@ namespace Carometro.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+            }
                 app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
                 });
-
-            }
 
             app.UseHttpsRedirection();
 
