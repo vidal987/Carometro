@@ -20,7 +20,7 @@ namespace BackEnd.Controllers
         [Authorize(Roles = "Admin,Professor")]
         public IActionResult GetManager()
         {
-            return Ok("Está logado como gerente: " + User.Identity. );
+            return Ok("Está logado como gerente: " + User.Identity.Name);
         }
 
 
