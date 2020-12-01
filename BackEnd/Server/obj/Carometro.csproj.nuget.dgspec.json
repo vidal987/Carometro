@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jasonvolney/Carometro/BackEnd/Server/Carometro.csproj": {}
+    "/home/jasonvolney/dev/Carometro/BackEnd/Server/Carometro.csproj": {}
   },
   "projects": {
-    "/home/jasonvolney/Carometro/BackEnd/Server/Carometro.csproj": {
+    "/home/jasonvolney/dev/Carometro/BackEnd/Server/Carometro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jasonvolney/Carometro/BackEnd/Server/Carometro.csproj",
+        "projectUniqueName": "/home/jasonvolney/dev/Carometro/BackEnd/Server/Carometro.csproj",
         "projectName": "Carometro",
-        "projectPath": "/home/jasonvolney/Carometro/BackEnd/Server/Carometro.csproj",
+        "projectPath": "/home/jasonvolney/dev/Carometro/BackEnd/Server/Carometro.csproj",
         "packagesPath": "/home/jasonvolney/.nuget/packages/",
-        "outputPath": "/home/jasonvolney/Carometro/BackEnd/Server/obj/",
+        "outputPath": "/home/jasonvolney/dev/Carometro/BackEnd/Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jasonvolney/.nuget/NuGet/NuGet.Config"
@@ -53,6 +53,14 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.22, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.8.0, )"
             }
           },
           "imports": [
