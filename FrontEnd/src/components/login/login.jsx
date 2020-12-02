@@ -1,5 +1,6 @@
 import React from "react";
 import loginImg from "../../senai.png";
+import { Link } from 'react-router-dom';
 
 export class Login extends React.Component {
   constructor(props) {
@@ -16,10 +17,10 @@ export class Login extends React.Component {
           </div>
           <div className="form">
             <div className="form-group">
-              <input type="text" name="username" placeholder=" NI" />
+              <input type="text" name="username" placeholder="NI" />
             </div>
             <div className="form-group">
-              <input type="password" name="password" placeholder=" Senha" />
+              <input type="password" name="password" placeholder="Senha" />
             </div>
           </div>
         </div>
@@ -28,6 +29,8 @@ export class Login extends React.Component {
             Entrar
           </button>
         </div>
+          <br></br>
+          <Link to="/cadastro">Registre-se</Link>
       </div>
     );
   }
