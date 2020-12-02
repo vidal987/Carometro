@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import Cadastro from './Cadastro';
 import Turmas from './Turmas';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Home } from './components/Home/Home';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
                 <Route path="/" exact={true} component={App} />
                 <Route path="/cadastro" component={Cadastro} />
                 <Route path="/turmas" component={Turmas} />
+                <Route path="/Home" component={Home} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));
