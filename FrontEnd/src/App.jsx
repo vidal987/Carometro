@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { Login, Register } from "./components/login/index";
 import { Home } from "./components/Home/Home";
+import { Cadastrar } from "./components/Cadastrar/Cadastrar";
 
 class App extends React.Component {
   constructor(props) {

@@ -1,48 +1,49 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Turmas from "../../Turmas";
-import Cadastrar from "../Cadastrar/Cadastrar";
 import add from "../../img/add.png";
-import aluno from "../../img/aluno.png";
-import list from "../../img/list.png";
-import turma from "../../img/turma.png";
 
-export class Home extends React.Component {
+
+export class Cadastrar extends React.Component {
     constructor(props) {
       super(props);
     }
     render() {
       return (
         <div className="home-container">
+          <div className="top-container">
+            <h1 className="page-title">Cadastrar</h1>
+            <button className="btn-voltar"><Link to="/Home"></Link>Voltar</button>
+          </div>
           <div className="container-homebtn">
               <div className="home-buttons">
                   <button className="home-btn">
                     <img src={add} className="home-icon" />
-                    <Link to="./Cadastrar"></Link>
+                    <Link to="/"></Link>
                   </button>
-                  <span className="span-home">Cadastrar</span>
+                  <span className="span-home">Alunos</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">
-                  <img src={list} className="home-icon" />
+                  <img src={add} className="home-icon" />
                   <Link to="/"></Link>
                 </button>
-                <span className="span-home">Listar</span>
+                <span className="span-home">Cursos</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">
-                  <img src={aluno} className="home-icon" />
+                  <img src={add} className="home-icon" />
                   <Link to="/"></Link></button>
-                <span className="span-home">Alunos</span>
+                <span className="span-home">Turmas</span>
               </div>
               <div className="home-buttons">
-                <button className="home-btn">
-                  <img src={turma} className="home-icon" />
-                  <Link to="./Turmas"></Link></button>
-                <span className="span-home">Turmas</span>
+                 <button className="home-btn">
+                  <img src={add} className="home-icon" />
+                  <Link to="/Turmas"></Link></button>
+                <span className="span-home">Usuários</span>
               </div>
           </div>
         </div>
         );
     }
 }
+
