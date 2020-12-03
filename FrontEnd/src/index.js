@@ -8,6 +8,7 @@ import Turmas from './Turmas';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Home } from './components/Home/Home';
 import { Cadastrar } from './components/Cadastrar/Cadastrar';
+import { CadastrarTurma } from './components/CadastrarTurma';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
                 <Route path="/turmas" component={Turmas} />
                 <Route path="/Home" component={Home} />
                 <Route path="/Cadastrar" component={Cadastrar} />
+                <Route path="/CadastrarTurma" component={CadastrarTurma} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));

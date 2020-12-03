@@ -326,7 +326,6 @@ input {
   padding: 10px;
   width: 100px;
   font-size: large;
-  font-weight: 600;
   color: #FAFAFA;
 }
 
@@ -336,9 +335,83 @@ input {
 }
 
 .top-container{
- margin-bottom: 100px;
- width: auto;
- height: auto;
+  margin-bottom: 100px;
+  display: inline;
+  width: auto;
+  height: auto;
 }
 //Fim do Css - Página home e cadastro
+
+// Início do css - página Cadastrar Turma
+
+.cturma-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: min-content;
+  border-radius: 10px;
+  background-color: #FFFF;
+  box-shadow: 2px 2px 10px #5e6470;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:120px; 
+  padding-top: 100px;
+  padding-bottom: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-input-cturma {
+  display: grid;
+  columns: 2;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+.form-cturma{
+  display: grid;
+  columns: 2;
+  margin-top: 10px;
+  width: min-content;
+}
+
+.input-cturma{
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #BABACA;
+}
+
+.span-cturma {
+  margin-left: 30px;
+  margin: 10px;
+  font-size: x-large;
+  font-weight: 500;
+  width: 100%;
+}
+
+  .btn-turma{
+    margin-left: 20px;
+    font-weight: 500;
+    background: #FF4646;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: auto;
+    font-size: large;
+    color: #FAFAFA;
+  }
+  
+  .btn-turma:hover {
+    background: #b63333;
+    transition: 0.2s;
+  }
+
+  .page-title {
+    width: max-content;
+    margin-right: 15px;
+  }
+
+
 

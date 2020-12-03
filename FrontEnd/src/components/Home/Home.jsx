@@ -18,7 +18,7 @@ export class Home extends React.Component {
               <div className="home-buttons">
                   <button className="home-btn">
                     <img src={add} className="home-icon" />
-                    <Link to="./Cadastrar"></Link>
+                    <Link to="/Cadastrar"></Link>
                   </button>
                   <span className="span-home">Cadastrar</span>
               </div>
