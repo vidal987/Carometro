@@ -217,38 +217,110 @@ input {
   justify-content: center;
   align-items: center;
   
-  background-color: yellow;
+  background-color: #FAFAFA;
 }
 
 .cadastro h1 {
-  margin-top: 30px;
-  margin-left: 20px;
-  padding-bottom: 40px;
+  margin-top: -40px;
+  padding-top: -50px;
+  margin-left: 50px;
+  padding-bottom: 70px;
 }
 
 .cadastro label{
   color: black;
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 80px;
   margin-top: 80px;
 }
 
 .cadastro label1{
   color: black;
   font-size: 20px;
-  margin-left: 410px;
+  margin-left: 430px;
   margin-top: 80px;
 }
 
 .cadastro input {
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-right: 40px;
   color: black;
   background-color: #DADADA;
   border-radius: 10px;
   box-shadow: 1px 8px 8px #DADADA;
 }
+
+.btn2{
+  margin-top: 80px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 750px;
+  color: #FAFAFA;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+
+.btn2:hover {
+  background-color: #DADADA;
+  transition: 0.2s;
+}
+
+.acesso h3 {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.acesso input {
+  margin-left: -105px;
+  margin-bottom: 40px;
+  width: 10px;
+  height: 26px;
+}
+
+.btn3{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 50px;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btn3:hover {
+  background-color: #DADADA;
+  transition: 0.2s;
+}
+
+.btn4 {
+  margin-left: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 50px;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btn4:hover {
+  background-color: #DADADA;
+  text-decoration: none;
+  transition: 0.2s;
+}
+//Fim do css da página cadastro usuário
 
 //Início do css da página Home
 

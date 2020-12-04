@@ -10,7 +10,8 @@ class Cadastro extends React.Component {
 
     return (
       <div className="containercadastro" ref={this.props.containerRef}>
-      <Link to="/turmas">Turmas</Link>
+        <button type="button" className="btn2">
+            <Link to="/" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link></button>
         <div className="content">
             <div className="form">
                 <div className="cadastro">
@@ -26,12 +27,17 @@ class Cadastro extends React.Component {
                   <input type="text" name="username" placeholder="NI" />
                   <input type="password" name="password" placeholder="Senha" />
                 </div>
-                <h4>Acesso</h4>
-                <div>
-                    <input style={{ width: 36, height: 36 }} type="radio" value="Admin" name="admin" /> Admin
-                    <input style={{ width: 36, height: 36 }} type="radio" value="docente" name="docente" /> Docente
+                <div className="acesso">
+                <h3>Acesso</h3>
+                    <input type="radio" value="Admin" name="admin" /> Admin
+                    <input type="radio" value="docente" name="docente" /> Docente
                 </div>
                 <Dropzone/>
+                <button type="button" className="btn3">
+            <Link to="/" style={{ color: '#FFF', textDecoration: 'none' }}>Finalizar</Link>
+            </button>
+            <button type="button" className="btn4">
+            <Link to="/" style={{ color: '#FFF', textDecoration: 'none' }}>Adicionar novo</Link> </button>
       </div> 
   </div>
 </div>

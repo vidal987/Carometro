@@ -26,7 +26,7 @@ export class Login extends React.Component {
         </div>
         <div className="footer">
           <button type="button" className="btn">
-            <Link to="./Home">Entrar</Link>
+          <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>Entrar</Link>
           </button>
         </div>
           <br></br>
