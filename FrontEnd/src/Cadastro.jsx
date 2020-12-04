@@ -18,14 +18,14 @@ class Cadastro extends React.Component {
                 <h1>Cadastrar usuário</h1> 
                 <label>Nome completo</label>
                 <br></br>
-                  <input type="text" name="username" placeholder="Nome Completo" />
+                  <input className="login-form" type="text" name="username" placeholder="Nome Completo" />
                 </div>
                 <div className="cadastro">
                 <br></br><br></br>
                   <label>NI</label><label1>Senha</label1>
                   <br></br>
-                  <input type="text" name="username" placeholder="NI" />
-                  <input type="password" name="password" placeholder="Senha" />
+                  <input className="login-form" type="text" name="username" placeholder="NI" />
+                  <input className="login-form" type="password" name="password" placeholder="Senha" />
                 </div>
                 <div className="acesso">
                 <h3>Acesso</h3>
