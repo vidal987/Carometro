@@ -18,7 +18,7 @@ class Cadastro extends React.Component {
                 <h1>Cadastrar usuário</h1> 
                 <label>Nome completo</label>
                 <br></br>
-                  <input className="login-form" type="text" name="username" placeholder="Nome Completo" />
+                  <input className="login-form" type="text" name="username" placeholder=" Nome completo" />
                 </div>
                 <div className="cadastro">
                 <br></br><br></br>
