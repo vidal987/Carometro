@@ -8,10 +8,7 @@ export class CadastrarTurma extends React.Component {
     render() {
       return (
         <div className="cturma-container">
-          <div className="top-container">
             <h1 className="page-title">Cadastrar turma</h1>
-            <button className="btn-voltar"><Link to="/Cadastrar"></Link>Voltar</button>
-          </div>
           <div className="section-input-cturma">
               <div className="form-cturma">
               <span className="span-cturma">Nome</span>
@@ -25,6 +22,7 @@ export class CadastrarTurma extends React.Component {
           <div className="btn-section-turma">
             <button className="btn-turma">Cadastrar</button>
             <button className="btn-turma">Adicionar nova turma</button>
+            <button className="btn-turma"><Link to="/Cadastrar"></Link>Voltar</button>
           </div>
         </div>
         );
