@@ -12,7 +12,7 @@ export class CadastrarCurso extends React.Component {
           <div className="section-input-cturma">
               <div className="form-cturma">
               <label className="span-cturma">Nome do curso</label>
-                  <input type="text" placeholder="Nome do curso" className="input-cturma"></input>
+                  <input type="text" placeholder=" Nome do curso" className="input-cturma"></input>
               </div><br></br>
               <span className="span-cturma">Períodos</span>
               <div className="section-checkbox-cadastro">

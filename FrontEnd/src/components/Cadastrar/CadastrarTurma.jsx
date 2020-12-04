@@ -12,11 +12,11 @@ export class CadastrarTurma extends React.Component {
           <div className="section-input-cturma">
               <div className="form-cturma">
               <span className="span-cturma">Nome</span>
-                  <input type="text" placeholder="Nome da turma" className="input-cturma"></input>
+                  <input type="text" placeholder=" Nome da turma" className="input-cturma"></input>
               </div>
               <div className="form-cturma">
                   <span className="span-cturma">Curso</span>
-                  <input type="text" placeholder="Nome do curso" className="input-cturma"></input>
+                  <input type="text" placeholder=" Nome do curso" className="input-cturma"></input>
               </div>
           </div>
           <div className="btn-section-turma">
