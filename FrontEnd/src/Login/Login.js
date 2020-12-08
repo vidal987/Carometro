@@ -1,7 +1,9 @@
 import React from "react";
-import loginImg from "../../senai.png";
+import '../App.scss'
+import loginImg from '../img/senai.png';
+import { Link } from 'react-router-dom';
 
-export class Register extends React.Component {
+export class Login extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,7 +14,7 @@ export class Register extends React.Component {
         <div className="content">
           <div className="image">
             <img src={loginImg} />
-            <div className="header">Entrar</div>
+            <div className="header">Login</div>
           </div>
           <div className="form">
             <div className="form-group">
@@ -25,9 +27,12 @@ export class Register extends React.Component {
         </div>
         <div className="footer">
           <button type="button" className="btn">
-            Entrar
+          <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>Entrar</Link>
           </button>
         </div>
+          <br></br>
+          {/* Alterada a Rota */}
+          <Link to="./Aluno">Registre-se</Link>
       </div>
     );
   }

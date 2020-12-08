@@ -1,5 +1,5 @@
 import React from 'react';
-import "./App.scss";
+import "../App.scss";
 import Avatar from '@material-ui/core/Avatar';
 
 class Navbar extends React.Component {
