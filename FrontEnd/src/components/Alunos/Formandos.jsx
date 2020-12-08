@@ -15,8 +15,8 @@ export class Formandos extends React.Component {
             <button className="btn-voltar"><Link to="/Home"></Link>Voltar</button>
             <button className="btn-imprimir"><Link to=""></Link>Imprimir</button><br></br>
           </div>
-          <h2 className="turma-formandos">Turma E-115-1-2020-1DT/2DT</h2>
           <div className="formandos-card">
+          <h2 className="turma-formandos">Turma E-115-1-2020-1DT/2DT</h2>
               <div className="home-buttons">
                   <button className="home-btn">
                     <img src={student} className="formandos-pic" />
