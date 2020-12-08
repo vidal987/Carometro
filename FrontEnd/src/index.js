@@ -10,6 +10,8 @@ import { Home } from './components/Home/Home';
 import { Cadastrar } from './components/Cadastrar/Cadastrar';
 import { CadastrarTurma } from './components/Cadastrar/CadastrarTurma';
 import { CadastrarCurso } from './components/Cadastrar/CadastrarCurso';
+import { Formandos } from './components/Alunos/Formandos';
+import { Ocorrencias } from './components/Ocorrencias/Ocorrencias';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -21,6 +23,8 @@ ReactDOM.render(
                 <Route path="/Cadastrar" component={Cadastrar} />
                 <Route path="/CadastrarTurma" component={CadastrarTurma} />
                 <Route path="/CadastrarCurso" component={CadastrarCurso} />
+                <Route path="/Formandos" component={Formandos} />
+                <Route path="/Ocorrencias" component={Ocorrencias} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));
