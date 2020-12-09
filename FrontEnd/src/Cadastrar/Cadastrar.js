@@ -3,7 +3,7 @@ import '../App.scss';
 import { Link } from 'react-router-dom';
 import add from '../img/add.png';
 
-export class Options extends React.Component {
+export class Cadastrar extends React.Component {
     constructor(props) {
       super(props);
     }

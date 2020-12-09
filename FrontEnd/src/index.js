@@ -6,7 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Home } from './Home/Home.js';
 import { Start } from './Start/Start.js';
 import { Turma } from './Turma/Turma.js';
-import { Options } from './Options/Options';
+import { Cadastrar } from './Cadastrar/Cadastrar.js';
 import { Aluno } from './Aluno/Aluno.js';
 import { Login } from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
@@ -20,7 +20,7 @@ ReactDOM.render(
                 <Route path="/Home" component={Home} />
                 <Route path="/Start" component={Start} />
                 <Route path="/Turma" component={Turma} />
-                <Route path="/Options" component={Options} />
+                <Route path="/Cadastrar" component={Cadastrar} />
                 <Route path="/Login" component={Login} />
                 <Route path="/Aluno" component={Aluno} />
                 <Route path="/Curso" component={Curso} />

@@ -7,7 +7,7 @@ import list from '../img/list.png';
 import turma from '../img/turma.png';
 import { Start } from '../Start/Start.js';
 import { Turma } from '../Turma/Turma.js';
-import { Options } from '../Options/Options';
+import { Options } from '../Cadastrar/Cadastrar';
 import { Aluno } from '../Aluno/Aluno.js';
 import { Login } from '../Login/Login.js';
 import { Curso } from '../Curso/Curso.js';
