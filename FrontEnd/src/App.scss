@@ -756,12 +756,13 @@ input {
     margin-top: 15px;
   }
 
+  // Este é o header da área das ocorrências
   .ocorrencias-header {
-    width: 100%;
+    width: 110%;
     display: inline-flex;
     justify-content: space-between;
     margin-top: 40px;
-    margin-left: -100px;
+    margin-left: -90px;
   }
 
   .btn-add-ocorrencia {

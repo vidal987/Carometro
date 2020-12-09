@@ -51,6 +51,7 @@ export class Ocorrencias extends React.Component {
                     {/* Aqui será adicionada a função de Editar os dados do aluno */}
                 </div>
               </div>
+              
               <div className="ocorrencias-header">
                 <h1 className="nome-aluno">Ocorrências</h1>
                 <button className="btn-add-ocorrencia"><Link to=""></Link>Nova ocorrência</button>
