@@ -517,7 +517,7 @@ input {
     
   }
 
-  // Formandos css
+  // Formandos css -----------------
 
   .formandos-container {
     width: 60%;
@@ -596,13 +596,13 @@ input {
 
   .photo-card {
     background-color: #DADADA;
-    box-shadow: 1px 1px 6px #5e6470;
+    box-shadow: 2px 2px 8px #5e6470;
     width: 290px;
     height: 290px;
     border: 0px solid;
     border-radius: 5px;
     margin: 25px 40px 20px 20px;
-    padding-top: 6px;
+    padding: 7px 2px 0px 2px;
   }
 
   .ocorrencias-container {
@@ -617,8 +617,8 @@ input {
     margin-bottom: 120px;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -636,7 +636,7 @@ input {
 
   .card-info-aluno {
     background-color: #DADADA;
-    box-shadow: 1px 1px 6px #5e6470;
+    box-shadow: 2px 2px 8px #5e6470;
     width: 50%;
     height: 50%;
     border: 0px solid;
@@ -664,11 +664,10 @@ input {
   .nome-aluno {
     text-align: left;
     width: 50%;
-    margin-left: 100px;
     font-weight: 500;
   }
 
-  .btn-voltar-formandos{
+  .btn-voltar-ocorrencias{
     // float: right;
     margin-right: 100px;
     margin-top: 30px;
@@ -684,12 +683,12 @@ input {
     box-shadow: 2px 2px 5px #BABACA;
   }
   
-  .btn-voltar-formandos:hover {
+  .btn-voltar-ocorrencias:hover {
     background: #b63333;
     transition: 0.2s;
   }
 
-  .header-formandos {
+  .header-ocorrencias {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
@@ -698,12 +697,16 @@ input {
   .ocorrencia {
     width: 100%;
     display: inline-flex;
+    margin-left: -40px;
+    margin-top: 10px;
   }
 
   .card-ocorrencia {
     background-color: #DADADA;
-    box-shadow: 1px 1px 6px #5e6470;
-    width: 50%;
+    box-shadow: 2px 2px 6px #5e6470;
+    border: none;
+    border-radius: 4px;
+    width: 70%;
     height: 100px;
     padding: 10px;
     padding-top: 5px;
@@ -721,6 +724,7 @@ input {
     font-weight: 500;
     text-align: left;
     margin: 10px;
+    margin-left: 20px;
     line-height: 10px;
   }
 
@@ -751,3 +755,32 @@ input {
   .buttons-aluno {
     margin-top: 15px;
   }
+
+  .ocorrencias-header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: -100px;
+  }
+
+  .btn-add-ocorrencia {
+    margin-top: 30px;
+    font-weight: 500;
+    background: #FF4646;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 160px;
+    height: 40px;
+    font-size: large;
+    color: #FAFAFA;
+    box-shadow: 2px 2px 8px #BABACA;
+  }
+
+  .btn-add-ocorrencia:hover {
+    background: #b63333;
+    transition: 0.2s;
+  }
+
+ 

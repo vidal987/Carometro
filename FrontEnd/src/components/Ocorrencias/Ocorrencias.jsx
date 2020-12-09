@@ -12,9 +12,9 @@ export class Ocorrencias extends React.Component {
     render() {
       return (
         <div className="ocorrencias-container">
-          <div className="header-formandos">
+          <div className="header-ocorrencias">
             <h1 className="nome-aluno">Rebecca da Silva Souza Ramos</h1>
-            <button className="btn-voltar-formandos"><Link to="/Turmas"></Link>Voltar</button>
+            <button className="btn-voltar-ocorrencias"><Link to="/Turmas"></Link>Voltar</button>
           </div>
           <div className="container-ocorrencias">
               <div className="photo-card">
@@ -38,21 +38,27 @@ export class Ocorrencias extends React.Component {
                 </div>
               </div>
               <div className="buttons-aluno">
-                      <div className="edit-delete-btn">
-                        {/* Aqui será adicionada a função de Editar os dados do aluno */}
-                        <img src={edit}/>
-                      </div>
-                      <div className="edit-delete-btn">
-                        <img src={del}/>
-                        {/* Aqui será adicionada a função de Excluir o aluno */}
-                      </div>
-                      <div className="edit-delete-btn">
-                        {/* Aqui será adicionada a função de Editar os dados do aluno */}
-                        <img src={printer}/>
-                      </div>
-                    </div>
-              <h1 className="nome-aluno">Ocorrências</h1>
+                <div className="edit-delete-btn">
+                    {/* Aqui será adicionada a função de Editar os dados do aluno */}
+                    <img src={edit}/>
+                </div>
+                <div className="edit-delete-btn">
+                    <img src={del}/>
+                    {/* Aqui será adicionada a função de Excluir o aluno */}
+                </div>
+                <div className="edit-delete-btn">
+                    <img src={printer}/>
+                    {/* Aqui será adicionada a função de Editar os dados do aluno */}
+                </div>
+              </div>
+              <div className="ocorrencias-header">
+                <h1 className="nome-aluno">Ocorrências</h1>
+                <button className="btn-add-ocorrencia"><Link to=""></Link>Nova ocorrência</button>
+              </div>
+
               <div className="ocorrencias-area">
+
+            {/* Ocorrencia fictícia 1 */}
                 <div className="ocorrencia">
                   <div className="card-ocorrencia">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -71,6 +77,29 @@ export class Ocorrencias extends React.Component {
                     <h3>Criada:</h3>
                     {/* Data de criação da ocorrência e usuário que a criou */}
                     <p className="data-ocorrencia">25/11/2020</p>
+                    <p>Claudia Camusso</p>
+                  </div>
+                </div>
+
+            {/* Ocorrencia fictícia 2 */}
+                <div className="ocorrencia">
+                  <div className="card-ocorrencia">
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div className="buttons-ocorrencia">
+                      <div className="edit-delete-btn">
+                        {/* Aqui será adicionada a função de Editar a ocorrência */}
+                        <img src={edit}/>
+                      </div>
+                      <div className="edit-delete-btn">
+                        <img src={del}/>
+                        {/* Aqui será adicionada a função de Excluir a ocorrência */}
+                      </div>
+                    </div>
+                  <div className="dados-criacao">
+                    <h3>Criada:</h3>
+                    {/* Data de criação da ocorrência e usuário que a criou */}
+                    <p className="data-ocorrencia">18/10/2020</p>
                     <p>Claudia Camusso</p>
                   </div>
                 </div>
