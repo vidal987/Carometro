@@ -11,6 +11,7 @@ import { Aluno } from './Aluno/Aluno.js';
 import { Login } from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
 import { Lista } from './Lista/Lista.js';
+import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx'
 
 ReactDOM.render(
         <BrowserRouter>
@@ -24,6 +25,7 @@ ReactDOM.render(
                 <Route path="/Aluno" component={Aluno} />
                 <Route path="/Curso" component={Curso} />
                 <Route path="/Lista" component={Lista} />
+                <Route path="/Ocorrencias" component={Ocorrencias} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));
