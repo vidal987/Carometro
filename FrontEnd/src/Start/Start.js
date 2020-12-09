@@ -1,19 +1,18 @@
 import { Input } from "@material-ui/core";
 import React from "react";
-import "./App.scss";
 import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { FaGraduationCap } from "@react-icons/all-files/fa/FaGraduationCap";
 
-class Turmas extends React.Component {
+export class Start extends React.Component {
   render() {
     
     return (
       <div>
         <div className="containerTurmas">
            <Link to="/"><Button className="btn-back" variant="primary">Voltar</Button>{' '}</Link> 
-            <div class="grid-container">
+            <div class="box-container">
               <div class="bloc-1">
                   <h2>Selecione um curso</h2>
                   <Button className="btn-turmas" variant="primary">CT Desenvolvimento de Sistemas</Button>{' '}
@@ -42,4 +41,3 @@ class Turmas extends React.Component {
     );
  }
 }
-export default Turmas;
