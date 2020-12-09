@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import student from "../../img/student.jpg";
 import edit from "../../img/edit.png";
 import del from "../../img/delete.png";
+import printer from "../../img/printer.png";
 
 export class Ocorrencias extends React.Component {
     constructor(props) {
@@ -36,14 +37,18 @@ export class Ocorrencias extends React.Component {
                     <span className="dados-aluno">000000000000</span> */}
                 </div>
               </div>
-              <div className="buttons-ocorrencia">
+              <div className="buttons-aluno">
                       <div className="edit-delete-btn">
-                        {/* Aqui será adicionada a função de Editar a ocorrência */}
+                        {/* Aqui será adicionada a função de Editar os dados do aluno */}
                         <img src={edit}/>
                       </div>
                       <div className="edit-delete-btn">
                         <img src={del}/>
-                        {/* Aqui será adicionada a função de Excluir a ocorrência */}
+                        {/* Aqui será adicionada a função de Excluir o aluno */}
+                      </div>
+                      <div className="edit-delete-btn">
+                        {/* Aqui será adicionada a função de Editar os dados do aluno */}
+                        <img src={printer}/>
                       </div>
                     </div>
               <h1 className="nome-aluno">Ocorrências</h1>
