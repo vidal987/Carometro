@@ -55,8 +55,11 @@ export class Ocorrencias extends React.Component {
 
               <div className="ocorrencias-header">
                 <h1 className="nome-aluno">Ocorrências</h1>
-                <button className="btn-filtrar"><Link to=""></Link>Filtrar</button>
-                <button className="btn-add-ocorrencia"><Link to=""></Link>Nova ocorrência</button>
+                <div className="buttons-adicionar-filtrar">
+                  <button className="btn-filtrar"><Link to=""></Link>Filtrar</button>
+                  <button className="btn-add-ocorrencia"><Link to=""></Link>Nova ocorrência</button>
+                </div>
+                
               </div>
 
               <div className="ocorrencias-area">
