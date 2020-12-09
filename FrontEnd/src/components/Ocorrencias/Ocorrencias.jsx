@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import student from "../../img/student.jpg";
-import edit from "../../img/edit.png";
-import del from "../../img/delete.png";
-import printer from "../../img/printer.png";
+import student from "../img/student.jpg";
+import edit from "../img/edit.png";
+import del from "../img/delete.png";
+import printer from "../img/printer.png";
+import "./Ocorrencias.css";
 
 export class Ocorrencias extends React.Component {
     constructor(props) {
@@ -51,7 +52,7 @@ export class Ocorrencias extends React.Component {
                     {/* Aqui será adicionada a função de Editar os dados do aluno */}
                 </div>
               </div>
-              
+
               <div className="ocorrencias-header">
                 <h1 className="nome-aluno">Ocorrências</h1>
                 <button className="btn-add-ocorrencia"><Link to=""></Link>Nova ocorrência</button>
