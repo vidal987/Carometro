@@ -589,16 +589,16 @@ input {
   // Ocorrencias css
    
   .ocorrencias-pic {
-    width: 210px;
-    height: 210px;
+    width: 290px;
+    height: 290px;
     border-radius: 6px;
   }
 
   .photo-card {
     background-color: #DADADA;
     box-shadow: 1px 1px 6px #5e6470;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     border: 0px solid;
     border-radius: 5px;
     margin: 25px 40px 20px 20px;
@@ -629,7 +629,9 @@ input {
   .container-ocorrencias {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
   }
 
   .card-info-aluno {
@@ -641,29 +643,106 @@ input {
     border-radius: 5px;
     margin: 25px 40px 20px 20px;
     padding: 10px;
-    
   }
 
   .info-aluno {
     text-align: left;
-    font-weight: 300;
+    font-weight: 100;
+    font-size: large;
   }
   
   .dados-container {
     text-align: left;
   }
 
-  .dados-aluno {
-    text-align: left;
-    font-size: medium;
-  }
+  // .dados-aluno {
+  //   text-align: left;
+  //   font-size: medium;
+  // }
 
   .nome-aluno {
     text-align: left;
-    width: 100%;
+    width: 50%;
     margin-left: 100px;
     font-weight: 500;
   }
 
+  .btn-voltar-formandos{
+    // float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+    font-weight: 500;
+    background: #FF4646;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: large;
+    color: #FAFAFA;
+    box-shadow: 2px 2px 5px #BABACA;
+  }
+  
+  .btn-voltar-formandos:hover {
+    background: #b63333;
+    transition: 0.2s;
+  }
 
+  .header-formandos {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
 
+  .ocorrencia {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .card-ocorrencia {
+    background-color: #DADADA;
+    box-shadow: 1px 1px 6px #5e6470;
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: left;
+    margin: 20px;
+    font-weight: 500
+  }
+
+  .ocorrencias-area {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .dados-criacao {
+    font-weight: 500;
+    text-align: left;
+    margin: 10px;
+    line-height: 10px;
+  }
+
+  .edit-delete-btn {
+    background: #FF4646;
+    box-shadow: 1px 1px 6px #5e6470;
+    border: none;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .edit-delete-btn:hover {
+    background: #b63333;
+    transition: 0.2s;
+  }
+
+  .edit-delete-btn img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .buttons-ocorrencia {
+    margin-top: 10px;
+  }
