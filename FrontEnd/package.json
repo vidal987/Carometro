@@ -1,0 +1,51 @@
+{
+  "name": "login-register-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@material-ui/core": "^4.11.1",
+    "@react-icons/all-files": "^4.1.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "bootstrap": "^4.5.3",
+    "customize-cra": "^1.0.0",
+    "delay": "^4.2.0",
+    "font-awesome": "^4.7.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.8.6",
+    "react-dropzone-uploader": "^2.11.0",
+    "react-pose": "^4.0.8",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4",
+    "react-spring": "^8.0.20"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "react-app-rewire-alias": "^0.1.8",
+    "react-app-rewired": "^2.1.6"
+  }
+}
