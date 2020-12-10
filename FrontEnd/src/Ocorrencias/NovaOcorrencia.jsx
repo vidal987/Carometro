@@ -29,7 +29,7 @@ export class NovaOcorrencia extends React.Component {
                 <div className="criador">
                     <label>Criador</label>
                     <select>
-                        <option> </option>
+                        <option>Selecionar</option>
                         <option>Claudia</option>
                         <option>Samira</option>
                     </select>

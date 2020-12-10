@@ -313,7 +313,7 @@
 .descricao input {
   height: 100%;
   width: 80%;
-  max-lines: 10;
+  max-lines: 5;
 }
 
 .descricao {
