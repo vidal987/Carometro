@@ -230,3 +230,14 @@
   text-decoration: none;
   color: #FAFAFA;
 }
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.form label {
+  
+}
