@@ -9,29 +9,45 @@ export class NovaOcorrencia extends React.Component {
     render() {
       return (
         <div className="ocorrencias-container">
-            <h1>Nova ocorrência</h1>
+            <div className="left-content">
+
+            <div className="top-container">
+                <h1 className="title">Nova ocorrência</h1>
+            </div>
 
             <div className="form">
-                <label>Título</label>
-                <input type="text" placeholder=" Título da ocorrência"></input>
+                <div className="titulo">
+                    <label>Título</label>
+                    <input type="text" placeholder="Título da ocorrência"></input>
+                </div>
 
-                <label>Descrição</label>
-                <input type="text" placeholder=" Descrição da ocorrência"></input>
+                <div className="descricao">
+                    <label>Descrição</label>
+                    <input type="text" placeholder="Descrição da ocorrência"></input>
+                </div>
 
-                <label>Data</label>
-                <input type="text" placeholder=" DD/MM/AAAA"></input>
+                <div className="criador">
+                    <label>Criador</label>
+                    <select>
+                        <option> </option>
+                        <option>Claudia</option>
+                        <option>Samira</option>
+                    </select>
+                </div>
 
-                <label>Criador</label>
-                <select>
-                    <option> </option>
-                    <option>Claudia</option>
-                    <option>Samira</option>
-                </select>
+                <div className="data">
+                    <label>Data</label>
+                    <input type="date"></input>
+                </div>
+
+        
             </div>
 
             <div className="buttons">
                 <button className="btn">Salvar</button>
                 <button className="btn">Cancelar</button>
+            </div>
+
             </div>
         </div>
       );
