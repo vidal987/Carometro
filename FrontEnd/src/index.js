@@ -12,7 +12,7 @@ import { Login } from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
 import { Lista } from './Lista/Lista.js';
 import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx';
-import { NovaOcorrencia } from './Ocorrencias/NovaOcorrencia.jsx';
+import { cadastraraluno } from './Cadastraraluno/cadastraraluno.js';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -22,12 +22,12 @@ ReactDOM.render(
                 <Route path="/Start" component={Start} />
                 <Route path="/Turma" component={Turma} />
                 <Route path="/Cadastrar" component={Cadastrar} />
+                 <Route path="/cadastraraluno" component={cadastraraluno} />
                 <Route path="/Login" component={Login} />
                 <Route path="/Aluno" component={Aluno} />
                 <Route path="/Curso" component={Curso} />
                 <Route path="/Lista" component={Lista} />
                 <Route path="/Ocorrencias" component={Ocorrencias} />
-                <Route path="/NovaOcorrencia" component={NovaOcorrencia} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));
