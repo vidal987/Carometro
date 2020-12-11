@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Header } from '../Header/Header.js';
 
 export class Curso extends React.Component {
     constructor(props) {
@@ -8,6 +9,7 @@ export class Curso extends React.Component {
     render() {
       return (
         <div className="cturma-container">
+        <Header/>
             <h1 className="page-title">Cadastrar curso</h1>
           <div className="section-input-cturma">
               <div className="form-cturma">
