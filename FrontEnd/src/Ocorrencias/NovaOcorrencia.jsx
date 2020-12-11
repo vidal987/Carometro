@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./Ocorrencias.css";
+import { Header } from '../Header/Header.js';
 
 export class NovaOcorrencia extends React.Component {
     constructor(props) {
@@ -8,6 +9,8 @@ export class NovaOcorrencia extends React.Component {
     }
     render() {
       return (
+          <div className="container">
+              <Header/>
         <div className="ocorrencias-container">
             <div className="left-content">
 
@@ -49,6 +52,7 @@ export class NovaOcorrencia extends React.Component {
             </div>
 
             </div>
+        </div>
         </div>
       );
     }
