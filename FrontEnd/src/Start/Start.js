@@ -1,48 +1,52 @@
-import { Input } from "@material-ui/core";
 import React from "react";
-import './Start.css';
-import { Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../App.scss';
 import { Link } from 'react-router-dom';
-import { FaGraduationCap } from "@react-icons/all-files/fa/FaGraduationCap";
+import add from '../img/add.png';
 import { Header } from '../Header/Header.js';
 
-export class Start extends React.Component {
-  render() {
-    
-    return (
-      <div>
-       <div className="">
-                <Header/>
-        <div className="container">
-           <Link to="/"><Button className="btn-back">Voltar</Button>{' '}</Link> 
-            <div class="box-container">
-              <div class="bloc-1">
-                  <h2>Selecione um curso</h2>
-                  <Button className="btn-turmas">CT Desenvolvimento de Sistemas</Button>{' '}
-                  <Button className="btn-turmas">CT Mecânica de Precisão</Button>{' '}
-                  <Button className="btn-turmas">CT Qualidade</Button>{' '}
-                  <Button className="btn-turmas">CT Redes de Computadores</Button>{' '}
-                  <Button className="btn-turmas">Assistente CT de Vendas</Button>{' '}       
+export class Options extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return (
+        <div className="nav-container">
+        <Header/>
+        <div className="home-container">
+          <div className="top-container">
+            <h1 className="page-title">Cadastrar</h1>
+            <button className="btn-voltar"><Link to="./Home"></Link>Voltar</button>
+          </div>
+          <div className="container-homebtn">
+              <div className="home-buttons">
+                  <button className="home-btn">
+                    <img src={add} className="home-icon" />
+                    <Link to="./Alunos"></Link>
+                  </button>
+                  <span className="span-home">Alunos</span>
               </div>
-              <div class="bloc-2">            
-              <FaGraduationCap className="FaGraduationCap" />          
-              <h1>Turmas</h1>   
-               <div className="CardTurma">
-              <span>1DT</span>
-               </div>
-              <div className="CardTurma">
-               <span>2DT</span>
-               </div>
-               <div className="CardTurma">
-               <span>3DT</span>
-               </div>
+              <div className="home-buttons">
+                <button className="home-btn">
+                  <img src={add} className="home-icon" />
+                  <Link to="./Cursos"></Link>
+                </button>
+                <span className="span-home">Cursos</span>
               </div>
-            </div>
+              <div className="home-buttons">
+                <button className="home-btn">
+                  <img src={add} className="home-icon" />
+                  <Link to="./Turmas"></Link></button>
+                <span className="span-home">Turmas</span>
+              </div>
+              <div className="home-buttons">
+                 <button className="home-btn">
+                  <img src={add} className="home-icon" />
+                  <Link to="./Usuários"></Link></button>
+                <span className="span-home">Usuários</span>
+              </div>
+          </div>
         </div>
-      </div>
-      </div>
-    
-    );
- }
+        </div>
+        );
+    }
 }
