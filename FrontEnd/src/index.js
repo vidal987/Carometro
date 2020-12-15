@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Home } from './Home/Home.js';
-import { Start } from './Start/Start.js';
+import  Start  from './Start/Start.js';
 import { Turma } from './Turma/Turma.js';
 import { Options } from './Options/Options';
 import { Aluno } from './Aluno/Aluno.js';
 import { Login } from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
 import { Lista } from './Lista/Lista.js';
+import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx';
+import { cadastraraluno } from './Cadastraraluno/cadastraraluno.js';
+import { Cadastrar } from './Cadastrar/Cadastrar.js';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -24,6 +27,10 @@ ReactDOM.render(
                 <Route path="/Aluno" component={Aluno} />
                 <Route path="/Curso" component={Curso} />
                 <Route path="/Lista" component={Lista} />
+                <Route path="/Ocorrencias" component={Ocorrencias} />
+                <Route path="/cadastraraluno" component={cadastraraluno} />
+                <Route path="/Cadastrar" component={Cadastrar} />
+
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));

@@ -1,7 +1,11 @@
 import React from "react";
-import '../App.scss';
+import '../App.scss'
 import { Link } from 'react-router-dom';
 import add from '../img/add.png';
+import aluno from '../img/aluno.png';
+import list from '../img/list.png';
+import turma from '../img/turma.png';
+import { Header } from '../Header/Header.js';
 
 export class Options extends React.Component {
     constructor(props) {
@@ -9,41 +13,37 @@ export class Options extends React.Component {
     }
     render() {
       return (
+        <div className="nav-container">
+        <Header/>
         <div className="home-container">
-          <div className="top-container">
-            <h1 className="page-title">Cadastrar</h1>
-            <button className="btn-voltar"><Link to="./Home"></Link>Voltar</button>
-          </div>
           <div className="container-homebtn">
               <div className="home-buttons">
-                  <button className="home-btn">
-                    <img src={add} className="home-icon" />
-                    <Link to="./Alunos"></Link>
+                  <button className="home-btn">                    
+                    <Link to="/Start"><img src={add} className="home-icon" /></Link>
                   </button>
-                  <span className="span-home">Alunos</span>
+                  <span className="span-home">Cadastrar</span>
               </div>
               <div className="home-buttons">
-                <button className="home-btn">
-                  <img src={add} className="home-icon" />
-                  <Link to="./Cursos"></Link>
+                <button className="home-btn">                 
+                  <Link to="/Lista"> <img src={add} className="home-icon" /></Link>
                 </button>
-                <span className="span-home">Cursos</span>
+                <span className="span-home">Listar</span>
               </div>
               <div className="home-buttons">
-                <button className="home-btn">
-                  <img src={add} className="home-icon" />
-                  <Link to="./Turmas"></Link></button>
+                <button className="home-btn">                  
+                  <Link to="/Aluno"><img src={add} className="home-icon" /></Link>
+                  </button>
+                <span className="span-home">Alunos</span>
+              </div>
+              <div className="home-buttons">
+                <button className="home-btn">                  
+                  <Link to="/Turma"><img src={add} className="home-icon" /></Link>
+                </button>
                 <span className="span-home">Turmas</span>
               </div>
-              <div className="home-buttons">
-                 <button className="home-btn">
-                  <img src={add} className="home-icon" />
-                  <Link to="./Usuários"></Link></button>
-                <span className="span-home">Usuários</span>
-              </div>
           </div>
+        </div>
         </div>
         );
     }
 }
-

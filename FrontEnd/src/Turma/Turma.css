@@ -1,0 +1,36 @@
+/* Inicio do CSS da página Turmas.js */
+.item1 {
+    grid-column: 1 / span 2;
+  }
+  
+.container {
+    width: 1130px;
+    height: 750px;
+    border-radius: 10px;
+    background-color: #FFFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    margin-top:120px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+btn-primary{
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #FF4646;
+}
+
+.btn-back{
+    width: 60px;
+    height: 41px;
+    margin-top: 0px;
+    border-radius: 8px;
+    margin-left: 820px;
+  }

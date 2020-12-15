@@ -1,25 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 div.container{
-    width: 200px;
-    height: 900px;
+    width: max-content;
+    height: 800px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    margin-left: 160px;
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 100px;
+  grid-gap: 20px;
   padding: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 img.students{
     border-radius: 10px;
     width: 250px;
-    height: 350px;
+    height: 200px;
     border: solid #FFFF 
+}
+
+.top-container{
+  float: right;
+  overflow: hidden;
+}
+
+.page-title{
+  margin-top: 25px;
+}
+
+.btn-voltar{
+  margin: auto;  
+}
+
+.container {
+  width: 1130px;
+  height: 750px;
+  border-radius: 10px;
+  background-color: #FFFF;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-top:120px; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }

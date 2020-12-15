@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.scss'
+import './Login.css'
 import loginImg from '../img/senai.png';
 import { Link } from 'react-router-dom';
 
@@ -18,20 +18,19 @@ export class Login extends React.Component {
           </div>
           <div className="form">
             <div className="form-group">
-              <input type="text" name="username" placeholder="NI" />
+              <input className="login-form" type="text" name="username" placeholder="NI" />
             </div>
             <div className="form-group">
-              <input type="password" name="password" placeholder="Senha" />
+              <input className="login-form" type="password" name="password" placeholder="Senha" />
             </div>
           </div>
         </div>
         <div className="footer">
           <button type="button" className="btn">
-          <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>Entrar</Link>
+          <Link to="./Home" style={{ color: '#FF4646', fontWeight: '700', textAlign: 'center', textDecoration: 'none' }}>Entrar</Link>
           </button>
         </div>
           <br></br>
-          {/* Alterada a Rota */}
           <Link to="./Aluno">Registre-se</Link>
       </div>
     );

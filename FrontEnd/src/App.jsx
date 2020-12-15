@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { Login } from './Login/Login.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
 
@@ -8,7 +9,6 @@ class App extends React.Component {
 
     return (
       <div className="App">
-
         <div className="login">
           <div className="container">  
               <Login />

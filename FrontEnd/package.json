@@ -20,7 +20,8 @@
     "react-pose": "^4.0.8",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
-    "react-spring": "^8.0.20"
+    "react-spring": "^8.0.20",
+    "react-user-avatar": "^1.10.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
