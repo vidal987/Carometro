@@ -19,7 +19,7 @@ export class Options extends React.Component {
           <div className="container-homebtn">
               <div className="home-buttons">
                   <button className="home-btn">                    
-                    <Link to="/Start"><img src={add} className="home-icon" /></Link>
+                    <Link to="/CadastrarTurma"><img src={add} className="home-icon" /></Link>
                   </button>
                   <span className="span-home">Cadastrar</span>
               </div>

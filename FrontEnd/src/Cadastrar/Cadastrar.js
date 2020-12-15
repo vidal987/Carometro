@@ -10,38 +10,36 @@ export class Cadastrar extends React.Component {
     }
     render() {
       return (
-          <div className="container">
+          <div className="home-container">
           <Header/>
             <div className="home-container">
+              <div className="container-homebtn">
               <div className="top-container">
                 <h1 className="page-title">Cadastrar</h1>
-                <button className="btn-voltar"><Link to="./Home"></Link>Voltar</button>
+                <button className="btn-voltar"><Link to="/Home"></Link>Voltar</button>
               </div>
-              <div className="container-homebtn">
                   <div className="home-buttons">
                       <button className="home-btn">
                         <img src={add} className="home-icon" />
-                        <Link to="./Alunos"></Link>
+                        <Link to="/Alunos"></Link>
                       </button>
                       <span className="span-home">Alunos</span>
-                  </div>
-                  <div className="home-buttons">
+              
+                
                     <button className="home-btn">
                       <img src={add} className="home-icon" />
-                      <Link to="./Cursos"></Link>
+                      <Link to="/Cursos"></Link>
                     </button>
                     <span className="span-home">Cursos</span>
-                  </div>
-                  <div className="home-buttons">
+              
                     <button className="home-btn">
                       <img src={add} className="home-icon" />
-                      <Link to="./Turmas"></Link></button>
+                      <Link to="/Turmas"></Link></button>
                     <span className="span-home">Turmas</span>
-                  </div>
-                  <div className="home-buttons">
+              
                      <button className="home-btn">
                       <img src={add} className="home-icon" />
-                      <Link to="./Usuários"></Link></button>
+                      <Link to="/Usuários"></Link></button>
                     <span className="span-home">Usuários</span>
                   </div>
           </div>

@@ -1,36 +1,198 @@
+/* Custom Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* Início do css - página Cadastrar Turma */
+.section-input-cturma {
+  display: grid;
+  columns: 2;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+.form-cturma{
+  display: grid;
+  columns: 2;
+  margin-top: 10px;
+  width: min-content;
+}
+
+.input-cturma{
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #BABACA;
+}
+
+.span-cturma {
+  margin-left: 30px;
+  margin: 10px;
+  font-size: x-large;
+  font-weight: 500;
+  width: 100%;
+}
+
+Button.btn-turmas{
+  min-width: 500px;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-weight: 500;
+  background: #DADADA;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: auto;
+  font-size: large;
+  color: #FAFAFA;
+}
+  
+Button.btn-turmas:hover {
+  background: #b63333;
+  transition: 0.2s;
+}
+
+.page-title {
+  width: max-content;
+  margin-right: 15px;
+  margin-bottom: 40px;
+}
+
+.section-checkbox-cadastro {
+  justify-content: left;
+  margin-left: -170px;
+  margin-top:25px;
+  text-align: left;
+}
+
+.section-checkbox-cadastro input {
+  background-color: #DADADA;
+  margin-bottom: 40px;
+  width: 20px;
+  height: 20px;
+  padding: -15px;
+}
+
+.label-checkbox {
+  font-size: large;
+  font-weight: 500;
+  margin-left: -160px;
+
+}
+
+.bloc-1{
+  max-width: 500px;
+  margin-top: -50px;
+  float: right;
+  text-align: center;
+  justify-content: center;
+}
+
+.bloc-2{
+  width: 621px;
+  height: 462px;
+  margin-top: 15px;
+  margin-left: 100px;
+  background-color: #DADADA;
+  border-radius: 10px;
+  float: right;
+  overflow: hidden;
+  display: flex;
+}
+
+Button.btn-back {
+  width: 100px;
+  font-size: 21px;
+  margin-top: 500px;
+  padding: 10px 15px;
+  margin-left: 850px;
+  border-radius: 5px;
+  border: solid 0px;
+  background-color: #FF4646;
+  box-shadow: 1px 1px 5px #5e6470;
+  color: black;
+  font-weight: bold;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
 /* Inicio do CSS da página Turmas.js */
 .item1 {
-    grid-column: 1 / span 2;
-  }
+  grid-column: 1 / span 2;
+}
+
+.homecontainer {
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: #FFFF;
+  box-shadow: 2px 2px 10px #5e6470;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: center;
+  padding-top: 100px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+
+.containerTurmas{
+  width: 1130px;
+  height: 750px;
+  border-radius: 10px;
+  background-color: #FFFF;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  margin-top:120px; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.btn-turmas{
+  width: 500px;
+  height: 80px;
+  border-radius: 10px;
   
-.container {
-    width: 1130px;
-    height: 750px;
-    border-radius: 10px;
-    background-color: #FFFF;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    margin-top:120px; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
-
-btn-primary{
-    width: 500px;
-    height: 80px;
-    border-radius: 10px;
-    background-color: #FF4646;
+.CardTurma{
+  width: 120px;
+  height: 120px;
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  box-shadow: #5e6470;
 }
 
-.btn-back{
-    width: 60px;
-    height: 41px;
-    margin-top: 0px;
-    border-radius: 8px;
-    margin-left: 820px;
-  }
+.grid-container{
+  margin-top: 0px;
+}
+
+.FaGraduationCap{
+  height: 30px;
+  width: 50px;
+  color: #FF4646;
+}
+
+.home-btn {
+  background-color: #DADADA;
+  box-shadow: 1px 1px 6px #5e6470;
+  width: 150px;
+  height: 150px;
+  border: 0px solid;
+  border-radius: 5px;
+  margin: 25px 35px 2 5px 15px;
+}
+
+/* Fim do CSS da página Turmas.js */

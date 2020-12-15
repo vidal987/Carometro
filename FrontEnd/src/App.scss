@@ -204,7 +204,6 @@ input {
 }
 
 
-
 .btn3{
   margin-top: 30px;
   padding-top: 10px;
@@ -403,81 +402,6 @@ input {
 }
   
 
-/* Início do css - página Cadastrar Turma */
-.section-input-cturma {
-  display: grid;
-  columns: 2;
-  width: 100%;
-  margin-left: 20px;
-  margin-right: 50px;
-  margin-bottom: 100px;
-}
-
-.form-cturma{
-  display: grid;
-  columns: 2;
-  margin-top: 10px;
-  width: min-content;
-}
-
-.input-cturma{
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #BABACA;
-}
-
-.span-cturma {
-  margin-left: 30px;
-  margin: 10px;
-  font-size: x-large;
-  font-weight: 500;
-  width: 100%;
-}
-
-.btn-turma{
-    margin-left: 20px;
-    font-weight: 500;
-    background: #FF4646;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    width: auto;
-    font-size: large;
-    color: #FAFAFA;
-  }
-  
-  .btn-turma:hover {
-    background: #b63333;
-    transition: 0.2s;
-  }
-
-  .page-title {
-    width: max-content;
-    margin-right: 15px;
-    margin-bottom: 40px;
-  }
-  
-  .section-checkbox-cadastro {
-    justify-content: left;
-    margin-left: -170px;
-    margin-top:25px;
-    text-align: left;
-  }
-
-  .section-checkbox-cadastro input {
-    background-color: #DADADA;
-    margin-bottom: 40px;
-    width: 20px;
-    height: 20px;
-    padding: -15px;
-  }
-
-  .label-checkbox {
-    font-size: large;
-    font-weight: 500;
-    margin-left: -160px;
-  
-  }
 
   // Formandos css -----------------
 
@@ -699,81 +623,6 @@ input {
       transition: 0.2s;
     }
     
-
-
-/* Inicio do CSS da página Turmas.js */
-.item1 {
-  grid-column: 1 / span 2;
-}
-
-.containerTurmas{
-  width: 1130px;
-  height: 750px;
-  border-radius: 10px;
-  background-color: #FFFF;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 100px;
-  margin-top:120px; 
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.btn-turmas{
-  width: 500px;
-  height: 80px;
-  border-radius: 10px;
-  
-}
-.btn-back{
-  width: 60px;
-  height: 41px;
-  margin-top: 0px;
-  border-radius: 8px;
-  margin-left: 820px;
-}
-
-.bloc-1{
-  max-width: 220px;
-  margin-top: -50px;
-
-}
-
-.bloc-2{
-  width: 622px;
-  height: 522px;
-  margin-top: -520px;
-  background-color: #DADADA;
-  border-radius: 10px;
-  float: right;
-  overflow: hidden;
-  display: flex;
-}
-
-.CardTurma{
-  width: 120px;
-  height: 120px;
-  margin-top: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #FAFAFA;
-  border-radius: 10px;
-  box-shadow: #5e6470;
-}
-
-.grid-container{
-  margin-top: 0px;
-}
-
-.FaGraduationCap{
-  height: 30px;
-  width: 50px;
-  color: #FF4646;
-}
-/* Fim do CSS da página Turmas.js */
 
 
 
