@@ -14,6 +14,7 @@ import { Login } from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
 import { Lista } from './Lista/Lista.js';
 import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx';
+import Import from './Importar/Importar.jsx';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -30,6 +31,7 @@ ReactDOM.render(
                 <Route path="/Curso" component={Curso} />
                 <Route path="/Lista" component={Lista} />
                 <Route path="/Ocorrencias" component={Ocorrencias} />
+                <Route path="/Importar" component={Import} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));

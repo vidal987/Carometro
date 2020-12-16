@@ -11,13 +11,14 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import senai from '../img/senai.png';
 import aluna from '../img/aluna.jpg';
 import UserAvatar from 'react-user-avatar';
+
 export class Header extends Component {
  
     render() {
         return (
             <>
            <Navbar className="Navbar" bg="light" expand="lg">
-                <Navbar.Brand href="#home"><img src={senai} className="logo" /></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={senai} className="logo" /></Navbar.Brand>
                 <span style={{width: 300}}>Gerenciador de Ocorrências</span> 
                 <li class="nav-item dropdown">
                     <Dropdown>
