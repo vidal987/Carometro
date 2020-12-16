@@ -13,13 +13,14 @@ export class Ocorrencias extends React.Component {
     }
     render() {
       return (
-          <div className="container">
+          <div className="nav-container">
                <Header/>
                 <div className="ocorrencias-container">
                   <div className="header-ocorrencias">
                     <h1 className="nome-aluno">Rebecca da Silva Souza Ramos</h1>
-                    <button className="btn-voltar-ocorrencias"><Link to="/Turmas"></Link>Voltar</button>
+                    <Link to="/Turma"><button className="btn-voltar-ocorrencias">Voltar</button></Link>
                   </div>
+                  <div className="dadosAluno">
                   <div className="container-ocorrencias">
                       <div className="photo-card">
                             <img src={student} className="ocorrencias-pic" />
@@ -55,10 +56,10 @@ export class Ocorrencias extends React.Component {
                             {/* Aqui será adicionada a função de Editar os dados do aluno */}
                         </div>
                       </div>
+                  </div>
 
                       <div className="ocorrencias-header">
-                        <h1 className="nome-aluno">Ocorrências</h1>
-                        <div className="buttons-adicionar-filtrar">
+                        <h1 className="h1-ocorrencia">Ocorrências</h1>
                           {/* Botão filtrar ocorrências */}
                           <button className="btn-filtrar">
                             Filtrar
@@ -68,6 +69,7 @@ export class Ocorrencias extends React.Component {
                           <Link className="link-btn" to="/NovaOcorrencia">
                             <button className="btn-add-ocorrencia">Nova ocorrência</button>
                           </Link>
+                        <div className="buttons-adicionar-filtrar">
 
                         </div>
                       </div>
