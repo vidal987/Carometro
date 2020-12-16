@@ -31,7 +31,7 @@ export class Home extends React.Component {
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                  
-                  <Link to="/Aluno"><img src={aluno} className="home-icon" /></Link>
+                  <Link to="/Lista"><img src={aluno} className="home-icon" /></Link>
                   </button>
                 <span className="span-home">Alunos</span>
               </div>

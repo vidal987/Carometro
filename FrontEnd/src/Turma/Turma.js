@@ -38,7 +38,7 @@ export default function Turma() {
                </div>
               </div>
             </div>
-              <Link to="/"><Button className="btn-back" variant="primary">Voltar</Button>{' '}</Link>         
+              <Link to="/Home"><Button className="btn-back" variant="primary">Voltar</Button>{' '}</Link>         
         </div>       
       </div>
       </div>   

@@ -1,11 +1,11 @@
 import React from 'react';
-import './Aluno.css';
+import './Usuario.css';
 import 'react-dropzone-uploader/dist/styles.css';
 import Dropzone from 'react-dropzone-uploader';
 import { Link } from 'react-router-dom';
 import { Header } from '../Header/Header.js';
 
-export class Aluno extends React.Component {
+export class Usuario extends React.Component {
 
   constructor(props) {
     super(props);
@@ -100,9 +100,9 @@ export class Aluno extends React.Component {
   }
 }
 
-Aluno.propTypes = {};
+Usuario.propTypes = {};
 
-Aluno.defaultProps = {}
+Usuario.defaultProps = {}
 
 
 

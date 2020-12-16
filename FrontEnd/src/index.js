@@ -9,7 +9,7 @@ import { cadastraraluno } from './Cadastraraluno/cadastraraluno.js';
 import { CadastrarTurma } from './CadastrarTurma/CadastrarTurma.js';
 import { Cadastrar } from './Cadastrar/Cadastrar.js';
 import { Options } from './Options/Options.js';
-import { Aluno } from './Aluno/Aluno.js';
+import { Usuario } from './Usuario/Usuario.js';
 import { Login } from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
 import { Lista } from './Lista/Lista.js';
@@ -27,7 +27,7 @@ ReactDOM.render(
                 <Route path="/cadastraraluno" component={cadastraraluno} />
                 <Route path="/Cadastrar" component={Cadastrar} />
                 <Route path="/Login" component={Login} />
-                <Route path="/Aluno" component={Aluno} />
+                <Route path="/Usuario" component={Usuario} />
                 <Route path="/Curso" component={Curso} />
                 <Route path="/Lista" component={Lista} />
                 <Route path="/Ocorrencias" component={Ocorrencias} />

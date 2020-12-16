@@ -19,25 +19,25 @@ export class Options extends React.Component {
           <div className="container-homebtn">
               <div className="home-buttons">
                   <button className="home-btn">                    
-                    <Link to="/CadastrarTurma"><img src={add} className="home-icon" /></Link>
+                    <Link to="/Usuario"><img src={add} className="home-icon" /></Link>
                   </button>
-                  <span className="span-home">Cadastrar</span>
+                  <span className="span-home">Usuário</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                 
-                  <Link to="/Lista"> <img src={add} className="home-icon" /></Link>
+                  <Link to="/Curso"> <img src={add} className="home-icon" /></Link>
                 </button>
-                <span className="span-home">Listar</span>
+                <span className="span-home">Cursos</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                  
-                  <Link to="/Aluno"><img src={add} className="home-icon" /></Link>
+                  <Link to="/cadastraraluno"><img src={add} className="home-icon" /></Link>
                   </button>
                 <span className="span-home">Alunos</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                  
-                  <Link to="/Turma"><img src={add} className="home-icon" /></Link>
+                  <Link to="/CadastrarTurma"><img src={add} className="home-icon" /></Link>
                 </button>
                 <span className="span-home">Turmas</span>
               </div>
