@@ -19,7 +19,7 @@ export class Header extends Component {
             <>
            <Navbar className="Navbar" bg="light" expand="lg">
                 <Navbar.Brand href="/"><img src={senai} className="logo" /></Navbar.Brand>
-                <span style={{width: 300}}>Gerenciador de Ocorrências</span> 
+                <span style={{width: 5000}} className="span-header">Gerenciador de Ocorrências</span> 
                 <li class="nav-item dropdown">
                     <Dropdown>
                         <Dropdown.Toggle variant="light" id="dropdown-basic">

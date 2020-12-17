@@ -17,6 +17,10 @@ export class Options extends React.Component {
         <Header/>
         <div className="home">
           <div className="container-homebtn">
+            <div className="options-header">
+              <h2 className="page-title">Cadastrar</h2>
+              <Link to="/Home"><button className="" variant="primary">Voltar</button>{' '}</Link>   
+            </div>
               <div className="home-buttons">
                   <button className="home-btn">                    
                     <Link to="/Usuario"><img src={add} className="home-icon" /></Link>
