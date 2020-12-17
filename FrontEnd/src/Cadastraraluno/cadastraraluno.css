@@ -2,9 +2,9 @@
     margin-top: 0px;
 }
 
-.home-container {
-    width: 60%;
-    height: auto;
+.containerhome {
+    width: 50%;
+    height: 80%;
     border-radius: 10px;
     background-color: #FFFF;
     box-shadow: 2px 2px 10px #5e6470;
@@ -12,7 +12,7 @@
     margin-right: auto;
     margin-top: 20px; 
     vertical-align: center;
-    padding-top: 100px;
+    padding-top:30px;
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
@@ -42,4 +42,143 @@ button.btn-add-new {
   font-weight: bold;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+}
+
+
+.cadastroaluno h1 {
+  margin-top: -40px;
+  padding-top: -50px;
+  margin-left: 50px;
+  padding-bottom: 70px;
+}
+
+.cadastroaluno label2{
+  color: black;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.cadastroaluno2 label3{
+  color: black;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.cadastroaluno2 label4{
+  color: black;
+  font-size: 20px;
+  margin-left: 450px;
+  margin-top: 80px;
+}
+
+.cadastroaluno2 label5{
+  color: black;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.cadastroaluno2 label6{
+  color: black;
+  font-size: 20px;
+  margin-left: 430px;
+  margin-top: 80px;
+}
+
+.cadastroaluno2 label7{
+  color: black;
+  font-size: 20px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.cadastroaluno2 label8{
+  color: black;
+  font-size: 20px;
+  margin-left: 450px;
+  margin-top: 80px;
+}
+
+.cadastroaluno input {
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  width: 89%;
+  color: black;
+  background-color: #DADADA;
+  border-radius: 10px;
+  box-shadow: 10px 20px 20px #DADADA;
+}
+
+.cadastroaluno2 input {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  width: 40%;
+  color: black;
+  background-color: #DADADA;
+  border-radius: 10px;
+  box-shadow: 1px 8px 8px #DADADA;
+}
+
+.btncadastroaluno{
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 655px;
+  color: #FAFAFA;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+
+.btnaluno:hover {
+  background-color: #DADADA;
+  transition: 0.2s;
+}
+
+.btnalunofinalizar{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 50px;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btnalunofinalizar:hover {
+  background-color: #DADADA;
+  transition: 0.2s;
+}
+
+.btnadicionarnovo {
+  margin-left: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 50px;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btnadicionarnovo:hover {
+  background-color: #DADADA;
+  text-decoration: none;
+  transition: 0.2s;
 }

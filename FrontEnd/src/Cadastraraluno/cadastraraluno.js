@@ -17,13 +17,16 @@ export class cadastraraluno extends React.Component {
 
                 <div className="nav-container">
                 <Header/>
-                <div className="home-container">
+                <div className="containerhome">
                   <div className="container-homebtn">
-                  <div className="form">                          
+                  <div className="form">   
+                  <div className="cadastroaluno">    
+                  <button type="button" className="btncadastroaluno">
+                    <Link to="/Options" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link></button>                
                                 <h1>Cadastrar Aluno</h1> 
                                     <label2>Nome completo</label2> 
                                     <input type="text" name="username" placeholder="Nome Completo" />
-                                
+                                    
                                     <div className="cadastroaluno2">
                                     <label3>Turma</label3>
                                     <label4>Matricula</label4>
@@ -42,22 +45,21 @@ export class cadastraraluno extends React.Component {
                                     <br></br> 
                                     <input type="text" name="Turma" placeholder="E-mail" />      
                                     <input type="text" name="Matrícula" placeholder="01/01/2001" />                                   
+                                    <br></br><br></br>
                             <Dropzone/>
-                            <br></br>
-                            <button type="button" className="btn-end">
-                                <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>Finalizar</Link>
-                            </button>
-                        <button type="button" className="btn-add-new">
-                        <Link to="./Aluno" style={{ color: '#FFF', textDecoration: 'none' }}>Adicionar novo</Link> </button>
+                            <br></br><br></br><br></br>
+                            <button type="button" className="btnalunofinalizar">
+                            <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>Finalizar</Link>
+                        </button>
+                    <button type="button" className="btnadicionarnovo">
+                    <Link to="./Aluno" style={{ color: '#FFF', textDecoration: 'none' }}>Adicionar novo</Link> </button>
                             </div>
-
+                            </div>   
                   </div> 
                   </div>
                 </div>
                 </div>
-
-
-
+              
 
                 
          );

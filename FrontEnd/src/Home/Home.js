@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.scss'
+import './Home.css'
 import { Link } from 'react-router-dom';
 import add from '../img/add.png';
 import aluno from '../img/aluno.png';
@@ -15,7 +15,7 @@ export class Home extends React.Component {
       return (
         <div className="nav-container">
         <Header/>
-        <div className="home-container">
+        <div className="home">
           <div className="container-homebtn">
               <div className="home-buttons">
                   <button className="home-btn">                    
