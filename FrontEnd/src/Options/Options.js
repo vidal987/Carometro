@@ -19,8 +19,9 @@ export class Options extends React.Component {
           <div className="container-homebtn">
             <div className="options-header">
               <h2 className="page-title">Cadastrar</h2>
-              <Link to="/Home"><button className="" variant="primary">Voltar</button>{' '}</Link>   
+              <Link to="/Home"><button className="btn-voltar" variant="primary">Voltar</button>{' '}</Link>   
             </div>
+            <div className="menu">
               <div className="home-buttons">
                   <button className="home-btn">                    
                     <Link to="/Usuario"><img src={add} className="home-icon" /></Link>
@@ -44,6 +45,7 @@ export class Options extends React.Component {
                   <Link to="/CadastrarTurma"><img src={add} className="home-icon" /></Link>
                 </button>
                 <span className="span-home">Turmas</span>
+              </div>
               </div>
           </div>
         </div>

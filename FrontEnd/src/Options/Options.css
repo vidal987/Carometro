@@ -35,14 +35,14 @@
 
 .home-buttons {
   justify-content: center; 
-  flex-wrap: wrap;
-  width: 235px;
+  width: 230px;
+  height: min-content;
   margin-left: 30px;
   margin-top: -200px;
 }
 
 .container-homebtn {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   height: 600px;
 }
@@ -62,21 +62,23 @@
 .page-title {
   float: left;
   margin-left: 100px;
+  margin-top: -20px;
   font-weight: 500;
 }
 
 .btn-voltar{
   float: right;
-  margin-right: 100px;
-  margin-top: 30px;
   font-weight: 500;
   background: #FF4646;
   border: none;
   border-radius: 4px;
   padding: 10px;
+  padding-top: -5px;
   width: 100px;
+  height: 45px;
   font-size: large;
   color: #FAFAFA;
+  box-shadow: 0.5px 0.5px 7px #5e6470;
 }
 
 .btn-voltar:hover {
@@ -93,4 +95,12 @@
 
 .options-header {
   width: 80%;
+  height: 20%;
+  justify-content: space-between;
 }
+
+.menu {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+

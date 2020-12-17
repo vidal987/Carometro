@@ -7,7 +7,7 @@ body {
 }
 
 .home {
-    height: 70%;
+    height: 40%;
     width: 30%;
     border-radius: 10px;
     background-color: #FFFF;
@@ -28,7 +28,7 @@ body {
 .container-homebtn {
     display: inline-flex;
     flex-wrap: wrap;
-    height: 600px;
+    height: 50%;
 }
 
 /* Buttons */
