@@ -31,7 +31,7 @@ export class Login extends React.Component {
           </button>
         </div>
           <br></br>
-          <Link to="./Aluno">Registre-se</Link>
+          <Link to="./Usuario">Registre-se</Link>
       </div>
     );
   }

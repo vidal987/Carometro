@@ -4,20 +4,20 @@
 
 .containerhome {
     width: 50%;
-    height: 80%;
+    height: 85%;
     border-radius: 10px;
     background-color: #FFFF;
     box-shadow: 2px 2px 10px #5e6470;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px; 
+    margin-top: 10px; 
     vertical-align: center;
-    padding-top:30px;
-    margin-bottom: 50px;
+    padding-top: 0px;
+    margin-bottom: 40px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 40px;
+    padding-left: 190px;
     padding-right: 40px;
     text-align: center;
 }
@@ -48,42 +48,42 @@ button.btn-add-new {
 .cadastroaluno h1 {
   margin-top: -40px;
   padding-top: -50px;
-  margin-left: 50px;
+  margin-left: 25px;
   padding-bottom: 70px;
 }
 
 .cadastroaluno label2{
   color: black;
   font-size: 20px;
-  margin-left: 80px;
+  margin-left: 60px;
   margin-top: 80px;
 }
 
 .cadastroaluno2 label3{
   color: black;
   font-size: 20px;
-  margin-left: 80px;
+  margin-left: 60px;
   margin-top: 80px;
 }
 
 .cadastroaluno2 label4{
   color: black;
   font-size: 20px;
-  margin-left: 450px;
+  margin-left: 380px;
   margin-top: 80px;
 }
 
 .cadastroaluno2 label5{
   color: black;
   font-size: 20px;
-  margin-left: 80px;
+  margin-left: 60px;
   margin-top: 80px;
 }
 
 .cadastroaluno2 label6{
   color: black;
   font-size: 20px;
-  margin-left: 430px;
+  margin-left: 360px;
   margin-top: 80px;
 }
 
@@ -91,22 +91,22 @@ button.btn-add-new {
   color: black;
   font-size: 20px;
   margin-top: 80px;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .cadastroaluno2 label8{
   color: black;
   font-size: 20px;
-  margin-left: 450px;
+  margin-left: 380px;
   margin-top: 80px;
 }
 
 .cadastroaluno input {
   margin-top: 15px;
-  margin-left: 50px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 10px;
-  width: 89%;
+  width: 91%;
   color: black;
   background-color: #DADADA;
   border-radius: 10px;
@@ -115,10 +115,10 @@ button.btn-add-new {
 
 .cadastroaluno2 input {
   margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 50px;
   margin-bottom: 30px;
-  width: 40%;
+  width: 41%;
   color: black;
   background-color: #DADADA;
   border-radius: 10px;
@@ -132,7 +132,8 @@ button.btn-add-new {
   width: 250px;
   height: 10px;
   border-radius: 8px;
-  margin-left: 655px;
+  margin-left: 600px;
+  margin-right: 50px;
   color: #FAFAFA;
   background-color: #FF4646;
   font-weight: bold;
@@ -152,7 +153,7 @@ button.btn-add-new {
   width: 250px;
   height: 10px;
   border-radius: 8px;
-  margin-left: 50px;
+  margin-right: 110px;
   background-color: #FF4646;
   font-weight: bold;
   font-size: larger;
@@ -171,7 +172,7 @@ button.btn-add-new {
   width: 250px;
   height: 10px;
   border-radius: 8px;
-  margin-left: 50px;
+  margin-left: 10px;
   background-color: #FF4646;
   font-weight: bold;
   font-size: larger;

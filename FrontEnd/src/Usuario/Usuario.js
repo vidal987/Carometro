@@ -44,23 +44,25 @@ export class Usuario extends React.Component {
       
       <div className="nav-container">
         <Header/>
-          <div className="home-container">
+          <div className="usuario-container">
               <div className="container-homebtn">
                     <div className="form">  
-                                <button type="button" className="btn-back">
-                                    <Link to="/" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link>
-                                </button>
                               <div className="input-block">
-                                  <h1>Cadastrar usuário</h1>
-                                  <label>Nome completo</label>
-                                  <input type="text" name="username" placeholder="Nome Completo" />
-                                  <label>NI</label>
+                              <button type="button" className="btnback">
+                                    <Link to="/" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link></button>
+                                <h1>Cadastrar Usuário</h1> 
+                                    <label1>Nome completo</label1> 
+                                    <input type="text" name="username" placeholder="Nome Completo" />
+                                    
+                                    <div className="input-block2">
+                                    <label2>NI</label2>
+                                    <label3>Senha</label3>
+                                  <br></br>
                                   <input type="text" name="NI" placeholder="NI" />
-                                  <label>Senha</label>
                                   <input type="password" name="password" placeholder="Senha" /> 
 
                                   <div className="acesso">
-                                    <h3>Acesso</h3>
+                                    <h4>Acesso</h4>
                                         <form onChange={this.handleFormChange}>
                                             <label className="label">
                                               <input
@@ -68,7 +70,7 @@ export class Usuario extends React.Component {
                                                 type="radio"
                                                 value="1"
                                                 name="name"
-                                                style={{ width: 16, height: 16 }}
+                                                style={{ width: 2, height: 16 }}
                                                 onChange={this.handleChange}
                                                 onClick={this.handleClick}
                                                 id="check"
@@ -89,9 +91,18 @@ export class Usuario extends React.Component {
                                                 Docente
                                                 </label>
                                           </form>
+                                          <br></br><br></br>
+                                          <Dropzone/>
+                            <br></br><br></br><br></br>
+                            <button type="button" className="btnalunofinalizar">
+                            <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>Finalizar</Link>
+                        </button>
+                    <button type="button" className="btnadicionarnovo">
+                    <Link to="./Aluno" style={{ color: '#FFF', textDecoration: 'none' }}>Adicionar novo</Link> </button>
                                   </div>
                               </div>
                     </div>
+                    </div>    
               </div>
             </div>
       </div>

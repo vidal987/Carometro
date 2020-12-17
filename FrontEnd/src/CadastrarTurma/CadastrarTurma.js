@@ -15,9 +15,10 @@ export class CadastrarTurma extends React.Component {
          <div className="nav-container">
           <div className="cturma-container">
             <div className="top-container">
-              <h1 className="page-title">Cadastrar turma</h1>
-              <button className="btn-voltar"><Link to="/Options">Voltar</Link></button>
-            </div>
+              <button className="btnvoltar">
+              <Link to="./Options" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link></button>
+              <h1>Cadastrar turma</h1>
+           
             <div className="section-input-cturma">
                 <div className="form-cturma">
                 <span className="span-cturma">Nome</span>
@@ -29,11 +30,15 @@ export class CadastrarTurma extends React.Component {
                 </div>
             </div>
             <div className="btn-section-turma">
-              <button className="btn-turma">Cadastrar</button>
-              <button className="btn-turma">Adicionar nova turma</button>
+            <button type="button" className="btnalunofinalizar">
+                            <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>Finalizar</Link>
+                        </button>
+                    <button type="button" className="btnadicionarnovo">
+                    <Link to="./Aluno" style={{ color: '#FFF', textDecoration: 'none' }}>Adicionar novo</Link> </button>
             </div>
           </div>
          </div> 
+         </div>
          </div>
         );
     }

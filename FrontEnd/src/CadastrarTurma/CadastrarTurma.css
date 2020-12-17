@@ -10,8 +10,8 @@ div.container{
 
 
 .container {
-    width: 80%;
-    height: 60%;
+    width: 50%;
+    height: 80%;
     border-radius: 10px;
     background-color: #FFFF;
     margin-left: auto;
@@ -24,24 +24,79 @@ div.container{
     padding-right: 40px;
 }
 
-
-btn-primary{
-    width: 500px;
-    height: 80px;
-    border-radius: 10px;
-    background-color: #FF4646;
+.top-container {
+  margin-left: 110px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-.btn-back{
-    width: 60px;
-    height: 41px;
-    margin-top: 0px;
-    border-radius: 8px;
-    margin-left: 820px;
-  }
+.top-container h1 {
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: -45px;
+  margin-bottom: 60px;
+  padding-bottom: 0px;
+}
 
 
 div.home-container {
-  width: 80%;
+  width: 50%;
   height: 90%;  
+}
+
+.cturma-container {
+  width: 50%;
+  height: 53%;
+}
+
+.btnvoltar{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 650px;
+  color: #FAFAFA;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btnalunofinalizar{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 20px;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btnalunofinalizar:hover {
+  background-color: #DADADA;
+  transition: 0.2s;
+}
+
+.btnadicionarnovo {
+  margin-left: 50px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+  border-radius: 8px;
+  margin-left: 50px;
+  background-color: #FF4646;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.btnadicionarnovo:hover {
+  background-color: #DADADA;
+  text-decoration: none;
+  transition: 0.2s;
 }

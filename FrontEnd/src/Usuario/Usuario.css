@@ -5,31 +5,27 @@ li{
     vertical-align: middle;
 }
 
-label{
-    font-size: smaller;
-    max-width: 500px;
-}
 
 .nav-container{
     margin-top: 0px;
 }
 
-.home-container {
-    width: 60%;
-    height: auto;
+.usuario-container {
+    width: 50%;
+    height: 90%;
     border-radius: 10px;
     background-color: #FFFF;
     box-shadow: 2px 2px 10px #5e6470;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px; 
+    margin-top: 50px; 
     vertical-align: center;
-    padding-top: 100px;
-    margin-bottom: 50px;
+    padding-top: 90px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 40px;
     text-align: center;
 }
@@ -40,41 +36,89 @@ label{
     height: 600px;
 }
 
-/* Buttons */
-button.btn-back, 
-button.btn-end, 
-button.btn-add-new {
-  width: 100px;
-  font-size: 21px;
-  margin-top: 0px;
-  padding: 10px 15px;
-  margin-left: 750px;
-  border-radius: 5px;
-  border: solid 0px;
-  background-color: #FF4646;
-  box-shadow: 1px 1px 5px #5e6470;
-  color: black;
-  font-weight: bold;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
-}
 
-div.input-block{
-    margin-top: -100px;
-    margin-left: -450px;
-    max-width: 500px;
-}
-
-.acesso {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    width: fit-content;
+.input-block{
     align-items: center;
-    font-size: smaller;
-  }
+    margin-top: -610px;
+    margin-left: 50px;
+}
 
   input#check.input{
-    background-color: none;
+    background-color: yellow;
+    width: 10%;
   }
 
+  .btnback{
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 250px;
+    height: 10px;
+    border-radius: 8px;
+    margin-left: 655px;
+    color: #FAFAFA;
+    background-color: #FF4646;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .input-block label1{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 130px;
+    margin-top: 10px;
+  }
+
+  .input-block label2{
+    color: black;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: -45px;
+    margin-top: 80px;
+  }
+
+  .input-block label3{
+    color: black;
+    font-size: 20px;
+    margin-left: 380px;
+    margin-right: 30px;
+    margin-top: 80px;
+  }
+
+  .input-block h1 {
+    margin-top: -40px;
+    padding-top: -50px;
+    margin-left: 50px;
+    padding-bottom: 70px;
+  }
+
+  .input-block input {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    width: 71%;
+    color: black;
+    background-color: #DADADA;
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px #DADADA;
+  }
+
+  .input-block2 input {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    width: 29%;
+    color: black;
+    background-color: #DADADA;
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px #DADADA;
+  }
+  
+  .acesso h4 {
+    margin-left: 60px;
+    margin-right: 140px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
