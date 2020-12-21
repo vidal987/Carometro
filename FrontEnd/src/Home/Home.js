@@ -15,7 +15,7 @@ export class Home extends React.Component {
       return (
         <div className="nav-container">
         <Header/>
-        <div className="home">
+        <div className="home-opcoes">
           <div className="container-homebtn">
               <div className="home-buttons">
                   <button className="home-btn">                    
@@ -40,6 +40,12 @@ export class Home extends React.Component {
                   <Link to="/Turma"><img src={turma} className="home-icon" /></Link>
                 </button>
                 <span className="span-home">Turmas</span>
+              </div>
+              <div className="home-buttons">
+                <button className="home-btn">                  
+                  <Link to="/Ocorrencias"><img src={aluno} className="home-icon" /></Link>
+                </button>
+                <span className="span-home">Ocorrencias</span>
               </div>
           </div>
         </div>
