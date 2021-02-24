@@ -7,7 +7,7 @@ import list from '../img/list.png';
 import turma from '../img/turma.png';
 import { Header } from '../Header/Header.js';
 
-export class Home extends React.Component {
+export class Options extends React.Component {
     constructor(props) {
       super(props);
     }
@@ -19,25 +19,25 @@ export class Home extends React.Component {
           <div className="container-homebtn">
               <div className="home-buttons">
                   <button className="home-btn">                    
-                    <Link to="/Options"><img src={add} className="home-icon" /></Link>
+                    <Link to="/CadastrarTurma"><img src={add} className="home-icon" /></Link>
                   </button>
                   <span className="span-home">Cadastrar</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                 
-                  <Link to="/Lista"> <img src={list} className="home-icon" /></Link>
+                  <Link to="/Lista"> <img src={add} className="home-icon" /></Link>
                 </button>
                 <span className="span-home">Listar</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                  
-                  <Link to="/Aluno"><img src={aluno} className="home-icon" /></Link>
+                  <Link to="/Aluno"><img src={add} className="home-icon" /></Link>
                   </button>
                 <span className="span-home">Alunos</span>
               </div>
               <div className="home-buttons">
                 <button className="home-btn">                  
-                  <Link to="/Turma"><img src={turma} className="home-icon" /></Link>
+                  <Link to="/Turma"><img src={add} className="home-icon" /></Link>
                 </button>
                 <span className="span-home">Turmas</span>
               </div>

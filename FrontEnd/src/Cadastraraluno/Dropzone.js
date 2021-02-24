@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.scss";
 import 'react-dropzone-uploader/dist/styles.css';
 import Dropzone from 'react-dropzone-uploader'
 
