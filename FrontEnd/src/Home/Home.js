@@ -22,7 +22,7 @@ export class Home extends React.Component {
               <div className={estilos["buttons-group"]}>
 
                 {/* Botão para a página de cadastros */}
-                  <Link to="/Options">
+                  <Link to="/Cadastrar">
                     <button className={estilos["home-btn1"]}>                    
                       <img src={add} className={estilos["home-icon1"]} />
                       <span className={estilos["span-home"]}>Cadastrar</span>

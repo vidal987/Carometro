@@ -1,4 +1,5 @@
 import React from "react";
+import estilos from "./Cadastrar.module.css";
 import { Link } from 'react-router-dom';
 import add from '../img/add.png';
 import { Header } from '../Header/Header.js';
@@ -9,41 +10,48 @@ export class Cadastrar extends React.Component {
     }
     render() {
       return (
-          <div className="home-container">
+          <div className={estilos["nav-container"]}>
           <Header/>
-            <div className="home-container">
-              <div className="container-homebtn">
-              <div className="top-container">
-                <h1 className="page-title">Cadastrar</h1>
-                <button className="btn-voltar"><Link to="/Home"></Link>Voltar</button>
+            <div className={estilos["container-homepage"]}>
+              <div className={estilos["top-container1"]}>
+                <h1 className={estilos["page-title1"]}>Cadastrar</h1>
+                <div clasName={estilos["link-div"]}>
+                  <Link to="/Home">
+                    <button className={estilos["btn-voltar1"]}>Voltar</button>
+                  </Link>
+                </div>
               </div>
-                  <div className="home-buttons">
-                      <button className="home-btn">
-                        <img src={add} className="home-icon" />
-                        <Link to="/Alunos"></Link>
-                      </button>
-                      <span className="span-home">Alunos</span>
+            <div className={estilos["home-buttons"]}>
+              <Link to="/Cadastraraluno">
+                <button className={estilos["home-btn1"]}>
+                  <img src={add} className={estilos["home-icon1"]}/>
+                  <span className={estilos["span-home"]}>Alunos</span>
+                </button>
+              </Link>
               
-                
-                    <button className="home-btn">
-                      <img src={add} className="home-icon" />
-                      <Link to="/Cursos"></Link>
-                    </button>
-                    <span className="span-home">Cursos</span>
+              <Link to="/Curso">
+                <button className={estilos["home-btn1"]}>
+                  <img src={add} className={estilos["home-icon1"]} />
+                  <span className={estilos["span-home"]}>Cursos</span>
+                </button>
+              </Link>
               
-                    <button className="home-btn">
-                      <img src={add} className="home-icon" />
-                      <Link to="/Turmas"></Link></button>
-                    <span className="span-home">Turmas</span>
-              
-                     <button className="home-btn">
-                      <img src={add} className="home-icon" />
-                      <Link to="/Usuários"></Link></button>
-                    <span className="span-home">Usuários</span>
-                  </div>
+              <Link to="/CadastrarTurma">
+                <button className={estilos["home-btn1"]}>
+                  <img src={add} className={estilos["home-icon1"]}/>
+                  <span className={estilos["span-home"]}>Turmas</span>
+                </button>
+              </Link>
+                    
+              <Link to="/Aluno">
+                <button className={estilos["home-btn1"]}>
+                  <img src={add} className={estilos["home-icon1"]}/>
+                  <span className={estilos["span-home"]}>Usuários</span>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
         );
     }
 }
