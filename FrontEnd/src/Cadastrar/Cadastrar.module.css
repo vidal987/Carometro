@@ -22,13 +22,6 @@ body {
     padding: 5%;
 }
 
-.home-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 80%;
-}
-
 .home-btn1 {
     background-color: #DADADA;
     box-shadow: 1px 1px 6px #5e6470;
@@ -49,9 +42,7 @@ body {
   }
 
   .btn-voltar1 {
-    width: 50%;
-    margin-right: 100px;
-    margin-top: 30px;
+    width: 100%;
     font-weight: 500;
     background: #FF4646;
     border: none;
@@ -68,14 +59,12 @@ body {
 
   .container-iconbtn{
     width: 100%;
-    
   }
 
   .home-icon1 {
     width: 70%;
     height: 60%;
   }
-
   
 .span-home {
     font-size: large;
@@ -86,13 +75,18 @@ body {
 
   .top-container1 {
       width: 100%;
-      margin: 1%;
+      margin-bottom: 5%;
       justify-content: space-between;
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
       
   }
 
   .page-title1{
       font-size: x-large;
+      width: 60%;
+  }
+
+  .link-div {
+      width: 40%;
   }
