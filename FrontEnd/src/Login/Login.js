@@ -6,11 +6,8 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import {useHistory} from "react-router";
 import jwt_decode from "jwt-decode";
-
-//Este é o package do qual mencionei que auxilia na criação de formulários
 import { Formik } from "formik";
 
-//Notem que aqui temos o código que vai buscar os dados na API 
 const Uri = 'https://app20201221151730.azurewebsites.net/api';
 
 export default function Login(props) {
@@ -105,11 +102,11 @@ export default function Login(props) {
            />
            {errors.Senha && touched.Senha && errors.Senha}
            <br></br>
-           <button type="submit" disabled={isSubmitting}>
+           <button className="button-login" type="submit" disabled={isSubmitting}>
              Entrar
            </button>
            <br></br>
-           <Link className="text-link" to="/Aluno">Registre-se</Link>
+           <Link className="text-link" to="./Aluno">Registre-se</Link>
          </form>
        )}
      </Formik>

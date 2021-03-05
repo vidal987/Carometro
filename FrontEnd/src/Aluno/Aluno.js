@@ -44,24 +44,28 @@ export class Aluno extends React.Component {
       
       <div className="nav-container">
         <Header/>
-          <div className="home-container">
-              <div className="container-homebtn">
+          <div className="home-aluno">
                     <div className="form">  
-                                <button type="button" className="btn-back">
-                                    <Link to="/" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link>
+                                <button type="button" className="btn-voltar">
+                                <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link>
                                 </button>
-                            <form onChange={this.handleFormChange}>
-                                  {/* Dropzone */}
-                                  <Dropzone/>
-                              <div className="input-block">
-                                  <h1>Cadastrar usuário</h1>
+
+                                <h1>Cadastrar usuário</h1>
+                            
+                                  <div className="input-block">
+                                  <div className="grupo-formnome">
                                   <label>Nome completo</label>
                                   <input type="text" name="username" placeholder="Nome Completo" />
+                                 
+                                  </div>
+                                  <div className="grupo-form">
                                   <label>NI</label>
                                   <input type="text" name="NI" placeholder="NI" />
+                                  </div>
+                                  <div className="grupo-form">
                                   <label>Senha</label>
                                   <input type="password" name="password" placeholder="Senha" /> 
-                                        
+                                  </div>      
 
                                   <div className="acesso">
                                     <h3>Acesso</h3>
@@ -75,7 +79,7 @@ export class Aluno extends React.Component {
                                                 onClick={this.handleClick}
                                                 id="check"
                                               />
-                                                Admin
+                                                <h6>Admin</h6>
                                                 </label>
                                             <label className="label">
                                               <input
@@ -87,10 +91,15 @@ export class Aluno extends React.Component {
                                                 onClick={this.handleClick}
                                                 id="check"
                                               />
-                                                Docente
+                                                
+                                                <h6>Docente</h6>
                                                 </label>
+                                                
                                   </div>
                               </div>
+                              <form onChange={this.handleFormChange}>
+                                  {/* Dropzone */}
+                                  <Dropzone/>
                             </form>
                             <div className="btn-bottom"></div>
                                 <button type="button" className="btn3">
@@ -100,7 +109,6 @@ export class Aluno extends React.Component {
                             <Link to="./Aluno" style={{ color: '#FFF', textDecoration: 'none' }}>Adicionar novo</Link> </button>
                         </div>
                     </div>
-              </div>
             </div>
      
     );

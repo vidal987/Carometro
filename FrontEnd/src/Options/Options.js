@@ -1,5 +1,4 @@
 import React from "react";
-import '../App.scss'
 import { Link } from 'react-router-dom';
 import add from '../img/add.png';
 import aluno from '../img/aluno.png';
