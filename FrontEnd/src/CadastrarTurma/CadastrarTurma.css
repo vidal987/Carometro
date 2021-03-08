@@ -2,46 +2,88 @@
 .item1 {
     grid-column: 1 / span 2;
   }
-  
-div.container{
-  height: 100vh;
-  width: 100vh;
-}
 
 
-.container {
-    width: 80%;
-    height: 60%;
-    border-radius: 10px;
-    background-color: #FFFF;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:120px; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-
-btn-primary{
-    width: 500px;
-    height: 80px;
-    border-radius: 10px;
-    background-color: #FF4646;
-}
-
-.btn-back{
-    width: 60px;
-    height: 41px;
-    margin-top: 0px;
-    border-radius: 8px;
-    margin-left: 820px;
-  }
-
-
-div.home-container {
+.cturma-container {
   width: 80%;
-  height: 90%;  
+  height: 80%;
+  border-radius: 10px;
+  background-color: #FFFF;
+  box-shadow: 2px 2px 10px #5e6470;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.top-container {
+  margin-bottom: 0px;
+  margin-top: -60px;
+}
+
+.section-input-cturma {
+  margin-bottom: 0px;
+  margin-top: -30px;
+}
+
+.page-title {
+  margin-top: 0px;
+  margin-bottom: -20px;
+  font-size: x-large;
+  width: 50%;
+  margin-left: 30px;
+  margin-right: -90px;
+
+
+}
+
+.btn-voltar2 {
+  width: 20%;
+  font-weight: 500;
+  background: #FF4646;
+  margin-left: 550px;
+  margin-top: -30px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
+}
+
+
+.btn-voltar2:hover {
+  background-color: #CACACA;
+  transition: 0.2s;
+}
+
+
+.span-cturma {
+  font-size: 17px;
+  margin-left: 65px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.input-cturma {
+  width: 300px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+
+div.btn-section-turma .btn-turma {
+  color: #FAFAFA;
+  background-color: #FF4646;
+  margin-left: -65px;
+  margin-right: 110px;
+  margin-top: 20px;
+}
+
+div.btn-section-turma .btn-turma:hover{
+  background-color: #CACACA;
+  transition: 0.2s;
 }
