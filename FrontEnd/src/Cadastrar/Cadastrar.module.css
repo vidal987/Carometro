@@ -6,7 +6,7 @@ body {
     margin-top: 0px;
 }
 
-.container-homepage {
+.container-cadastrar {
     width: 50%;
     height: fit-content;
     border-radius: 10px;
@@ -52,7 +52,7 @@ body {
     color: #FAFAFA;
   }
 
-  .btn-voltar:hover {
+  .btn-voltar1:hover {
     background: #b63333;
     transition: 0.2s;
   }
@@ -79,7 +79,6 @@ body {
       justify-content: space-between;
       display: flex;
       flex-wrap: wrap;
-      
   }
 
   .page-title1{
