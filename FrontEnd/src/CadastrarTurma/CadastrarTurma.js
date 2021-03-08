@@ -16,7 +16,7 @@ export class CadastrarTurma extends React.Component {
           <div className="cturma-container">
             <div className="top-container">
               <h1 className="page-title">Cadastrar turma</h1>
-              <button className="btn-voltar"><Link to="./Home">Voltar</Link></button>
+              <button className="btn-voltar2"><Link to="./Cadastrar" style={{ color: '#FFF', textDecoration: 'none' }}>Voltar</Link></button>
             </div>
             <div className="section-input-cturma">
                 <div className="form-cturma">
@@ -31,6 +31,7 @@ export class CadastrarTurma extends React.Component {
             <div className="btn-section-turma">
               <button className="btn-turma">Cadastrar</button>
               <button className="btn-turma">Adicionar nova turma</button>
+
             </div>
           </div>
          </div> 
