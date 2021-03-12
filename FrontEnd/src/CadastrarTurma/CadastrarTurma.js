@@ -31,7 +31,6 @@ export class CadastrarTurma extends React.Component {
             <div className="btn-section-turma">
               <button className="btn-turma">Cadastrar</button>
               <button className="btn-turma">Adicionar nova turma</button>
-
             </div>
           </div>
          </div> 

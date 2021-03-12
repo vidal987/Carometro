@@ -12,11 +12,13 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
     margin-bottom: 5%;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .top-container1 {
@@ -59,10 +61,9 @@
   }
 
   .form-group1 {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
-      
   }
 
   .btn-end, .btn-add-new {
@@ -99,4 +100,27 @@
   .form1 label, .form2 label{
     font-size: large;
     font-weight: 500;
+    padding-left: 2%;
   }
+
+  div.dzu-dropzone {
+    width: 50%;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    background-color: #DADADA;
+    text-align: center;
+    overflow: hidden;
+    }
+
+    label.dzu-inputLabel {
+        color: inherit;
+        text-align: center;
+        justify-content: center;
+    }
+
+    input.dzu-input {
+        background-color: #DADADA;
+        color: inherit;
+        visibility: visible;
+    }

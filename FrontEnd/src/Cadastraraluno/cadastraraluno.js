@@ -11,7 +11,35 @@ import { Header } from '../Header/Header.js';
 export class cadastraraluno extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
+
+  handleClick = e => {
+    const target = e.currentTarget;
+
+    if (
+      target.checked &&
+      this.state[`${target.name}-${target.value}`] === target.checked
+    ) {
+      target.checked = false;
+      target.click();
+    }
+  };
+
+  handleChange = e => {
+    const target = e.target;
+
+    if (this.state[`${target.name}-${target.value}`] !== target.checked) {
+      this.setState({
+        [`${target.name}-${target.value}`]: target.checked
+      });
+    }
+  };
+
+  handleFormChange = e => {
+    console.log("Field::", e.target, e.target.checked, e.type);
+  }
+
   render() {
     return (
 
@@ -60,20 +88,27 @@ export class cadastraraluno extends React.Component {
                   <label>E-mail</label>
                   <input type="text" name="Email" placeholder="E-mail" className={estilos["input-cadastro"]} />
                 </div>
-
-                <div className={estilos["form2"]}>
+                
+                <div className={estilos["form2"]} style={{marginLeft: -10}}>
                   <label>Foto do aluno</label>
-                  <Dropzone />
+                  <div className={estilos["dzu-dropzone10"]}>
+                    <label className={estilos["dzu-inputLabel"]} >
+                      Drag files or Click to Browse
+                      <input className={estilos["dzu-input10"]}  type="file" accept="*" multiple></input>
+                    </label>
+                  </div>
                 </div>
+                
+                {/* <Dropzone /> */}
               </div>
               <div className={estilos["bot-container1"]}>
-                <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>
+                <Link to="" style={{ color: '#FFF', textDecoration: 'none' }}>
                   <button type="submit" className={estilos["btn-end"]}>
                     Concluir
                   </button>
                 </Link>
 
-                <Link to="./Aluno" style={{ color: '#FFF', textDecoration: 'none' }}>
+                <Link to="" style={{ color: '#FFF', textDecoration: 'none' }}>
                   <button type="button" className={estilos["btn-add-new"]}>
                     Adicionar novo
                   </button>
