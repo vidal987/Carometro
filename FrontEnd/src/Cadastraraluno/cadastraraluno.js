@@ -98,7 +98,6 @@ export class cadastraraluno extends React.Component {
                     </label>
                   </div> */}
                 </div>
-                
                 <Dropzone />
               </div>
               <div className={estilos["bot-container1"]}>
