@@ -91,15 +91,15 @@ export class cadastraraluno extends React.Component {
                 
                 <div className={estilos["form2"]} style={{marginLeft: -10}}>
                   <label>Foto do aluno</label>
-                  <div className={estilos["dzu-dropzone10"]}>
+                  {/* <div className={estilos["dzu-dropzone10"]}>
                     <label className={estilos["dzu-inputLabel"]} >
                       Drag files or Click to Browse
                       <input className={estilos["dzu-input10"]}  type="file" accept="*" multiple></input>
                     </label>
-                  </div>
+                  </div> */}
                 </div>
                 
-                {/* <Dropzone /> */}
+                <Dropzone />
               </div>
               <div className={estilos["bot-container1"]}>
                 <Link to="" style={{ color: '#FFF', textDecoration: 'none' }}>
