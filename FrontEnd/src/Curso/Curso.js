@@ -13,14 +13,15 @@ export class Curso extends React.Component {
         <div className="nav-container">
           <Header/>
           <div className="homecontainer">            
-            <div className="container-homebtn">
             <Formik>
               <form>
-                  <div className="form-cturma">
-                      <button className="btn-back"><Link to="/Cadastrar"></Link>Voltar</button>
-                      <h1 className="page-title">Cadastrar curso</h1><br></br>
-                      <label className="span-cturma">Nome do curso</label><br></br>
-                      <input type="text" placeholder="Nome do curso" className="input-cturma"></input><br></br>
+                     <div className="form-cturma">
+                      <h1 className="page-title3">Cadastrar curso</h1>
+                      <Link to="./Cadastrar" style={{ color: '#FFF', textDecoration: 'none' }}>
+                                 <button type="button" className="btn-voltar3">
+                                 Voltar </button></Link>
+                      <label className="span-cturma">Nome do curso</label>
+                      <input type="text" placeholder="Nome do curso" className="input-cturma"></input>
                       <label className="span-cturma">Períodos</label>
                       <div className="section-checkbox-cadastro">
                           <input type="radio" name="manha"/> 
@@ -29,17 +30,25 @@ export class Curso extends React.Component {
                           <label className="label-checkbox" for="tarde">Tarde</label>
                           <input type="radio" name="noite"/> 
                           <label className="label-checkbox"for="noite">Noite</label>
-                      </div>
-                      <div className="btn-section-turma">
-                        <button className="btn-turma">Concluir</button>
-                        <button className="btn-turma">Cadastrar mais um curso</button>
-                      </div>          
+                    
+                      </div>        
                   </div>
               </form>
             </Formik>  
+            <div className="bot-container4">
+                            <Link to="" style={{ color: '#FFF', textDecoration: 'none' }}>
+                           <button type="submit" className="btn-concluir">Concluir
+                           </button>
+                           </Link>
+
+                           <Link to="" style={{ color: '#FFF', textDecoration: 'none' }}>
+                           <button type="button" className="btn-cadastrarcurso">Cadastrar mais um curso
+                           </button>
+                          </Link>
+                          </div>
             </div>
           </div>         
-        </div>
+     
   
         );
     }

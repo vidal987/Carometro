@@ -33,7 +33,7 @@
 .section-input-cturma {
   width: 100%;
   margin-bottom: 30px;
-  margin-left: -30px;
+  margin-left: 0px;
   margin-top: 0px;
 }
 
@@ -62,7 +62,7 @@
 
 .span-cturma {
   font-size: 17px;
-  margin-left: 65px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
 }
@@ -131,7 +131,7 @@
   .section-input-cturma{
     width: 100%;
     margin-bottom: 30px;
-    margin-left: -60px;
+    margin-left: 0px;
     margin-top: 0px;
   }
 

@@ -32,20 +32,23 @@ export default class Turma extends React.Component{
         <div className="nav-container">
         <Header/>
         <div className="homecontainer">
-           
+      
           <div className="container-homebtn">
+          <h3 className="page-title4">Selecione um Curso</h3>
+          <Link to="./Cadastrar" style={{ color: '#FFF', textDecoration: 'none' }}>
+          <button type="button" className="btn-voltar4">
+            Voltar </button></Link>
               <div class="grid-container">
                 <div class="bloc-1" style={{textAlign: "center", verticalAlign: "middle" }}>
-                    <Button style={{alignItems: "center", verticalAlign: "middle", border: "none" }} disabled><h4>Selecione um curso</h4></Button>{' '}
                     <Button className="btn-turmas" variant="primary">CT Desenvolvimento de Sistemas</Button>{' '}
                     <Button className="btn-turmas" variant="primary">CT Mecânica de Precisão</Button>{' '}
                     <Button className="btn-turmas" variant="primary">CT Qualidade</Button>{' '}
                     <Button className="btn-turmas" variant="primary">CT Redes de Computadores</Button>{' '}
                     <Button className="btn-turmas" variant="primary">Assistente CT de Vendas</Button>{' '}       
                 </div>
-                <div class="bloc-2" style={{textAlign: "center", verticalAlign: "middle" }}>    
+                <div class="bloco-2" style={{textAlign: "center", verticalAlign: "middle" }}>    
                 <FaGraduationCap className="FaGraduationCap" />          
-                <h1>Turmas</h1>   
+                <h4>Turmas</h4>   
                  <div className="CardTurma">
                 <span>1DT</span>
                  </div>
@@ -57,7 +60,6 @@ export default class Turma extends React.Component{
                  </div>
                 </div>
               </div>
-                <Link to="/"><Button className="btn-back" variant="primary">Voltar</Button>{' '}</Link>         
           </div>       
         </div>
         </div>   

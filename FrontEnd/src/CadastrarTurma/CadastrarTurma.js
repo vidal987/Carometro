@@ -30,11 +30,6 @@ export class CadastrarTurma extends React.Component {
                     <input type="text" placeholder="Nome do curso" className="input-cturma"></input>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div className="btn-section-turma">
-              <button className="btn-turma">Cadastrar</button>
-              <button className="btn-turma">Adicionar nova turma</button>
-=======
             <div className="bot-container2">
             <Link to="" style={{ color: '#FFF', textDecoration: 'none' }}>
               <button type="submit" className="btn-cadastrar">Cadastrar
@@ -47,7 +42,6 @@ export class CadastrarTurma extends React.Component {
              </Link>
 
             
->>>>>>> 0bcc089e1ff0968549cb0ad896a9679d45052fba
             </div>
           </div>
          </div> 

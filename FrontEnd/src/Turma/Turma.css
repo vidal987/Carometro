@@ -1,198 +1,105 @@
 /* Custom Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-/* Início do css - página Cadastrar Turma */
-.section-input-cturma {
-  display: grid;
-  columns: 2;
-  width: 100%;
-  margin-left: 20px;
-  margin-right: 50px;
-  margin-bottom: 100px;
-}
-
-.form-cturma{
-  display: grid;
-  columns: 2;
-  margin-top: 10px;
-  width: min-content;
-}
-
-.input-cturma{
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #BABACA;
-}
-
-.span-cturma {
-  margin-left: 30px;
-  margin: 10px;
-  font-size: x-large;
-  font-weight: 500;
-  width: 100%;
-}
-
-button.btn-turma{
-  min-width: 200px;
-  margin-top: 15px;
-  margin-left: 20px;
-  font-weight: 500;
-  background: #DADADA;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  width: auto;
-  font-size: large;
-  color: #FAFAFA;
-}
-  
-button.btn-turma:hover {
-  background: #b63333;
-  transition: 0.2s;
-}
-
-.page-title {
-  width: max-content;
-  margin-right: 15px;
-  margin-bottom: 40px;
-}
-
-.section-checkbox-cadastro {
-  justify-content: left;
-  margin-left: -170px;
-  margin-top:25px;
-  text-align: left;
-}
-
-.section-checkbox-cadastro input {
-  background-color: #DADADA;
-  margin-bottom: 40px;
-  width: 20px;
-  height: 20px;
-  padding: -15px;
-}
-
-.label-checkbox {
-  font-size: large;
-  font-weight: 500;
-  margin-left: -160px;
-
-}
-
-.bloc-1{
-  max-width: 500px;
-  margin-top: -50px;
-  float: right;
-  text-align: center;
-  justify-content: center;
-}
-
-.bloc-2{
-  width: 621px;
-  height: 462px;
-  margin-top: 15px;
-  margin-left: 100px;
-  background-color: #DADADA;
-  border-radius: 10px;
-  float: right;
-  overflow: hidden;
-  display: flex;
-}
-
-Button.btn-back {
-  width: 100px;
-  font-size: 21px;
-  margin-top: 500px;
-  padding: 10px 15px;
-  margin-left: 850px;
-  border-radius: 5px;
-  border: solid 0px;
-  background-color: #FF4646;
-  box-shadow: 1px 1px 5px #5e6470;
-  color: black;
-  font-weight: bold;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
-}
-
-/* Inicio do CSS da página Turmas.js */
-.item1 {
-  grid-column: 1 / span 2;
-}
-
 .homecontainer {
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: fit-content;
   border-radius: 10px;
   background-color: #FFFF;
   box-shadow: 2px 2px 10px #5e6470;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: center;
-  padding-top: 100px;
-  margin-top: 10px;
-  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
 
+.page-title4 {
+  font-size: x-large;
+  width: 60%;
+}
+
+.btn-voltar4 {
+  width: 100%;
+  font-weight: 500;
+  background: #FF4646;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
 }
 
 
-.containerTurmas{
-  width: 1130px;
-  height: 750px;
-  border-radius: 10px;
-  background-color: #FFFF;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 100px;
-  margin-top:120px; 
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+.btn-voltar4:hover {
+  background: #b63333;
+  transition: 0.5s;
+}
+
+.grid-container {
+  align-items: left;
+  width: 50%;
+  margin-left: -30px;
+  margin-right: 120px;
+}
+
+.bloco-2 {
+  width: 310%;
+  height: 94%;
+  margin-top: 23px;
+  margin-right: 10px;
+  background-color:#DADADA;
 }
 
 .btn-turmas{
-  width: 500px;
-  height: 80px;
-  border-radius: 10px;
-  
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;   
 }
 
+
+.MuiButton-label {
+  margin-left: -40px;
+  color: green;
+  font-weight: 200;
+}
+
+
 .CardTurma{
-  width: 120px;
-  height: 120px;
-  margin-top: 100px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  margin-top:10px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 0px;
   background-color: #FAFAFA;
   border-radius: 10px;
   box-shadow: #5e6470;
 }
 
-.grid-container{
-  margin-top: 0px;
+.CardTurma span{
+  margin-left: 15px;
 }
 
 .FaGraduationCap{
-  height: 30px;
+  text-align: left;
+  height: 40px;
   width: 50px;
+  margin-left: -150px;
+  margin-top: 15px;
   color: #FF4646;
 }
 
-.home-btn {
-  background-color: #DADADA;
-  box-shadow: 1px 1px 6px #5e6470;
-  width: 150px;
-  height: 150px;
-  border: 0px solid;
-  border-radius: 5px;
-  margin: 25px 35px 2 5px 15px;
+.bloco-2 h4 {
+  margin-left: 0px;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
+
 
 /* Fim do CSS da página Turmas.js */
