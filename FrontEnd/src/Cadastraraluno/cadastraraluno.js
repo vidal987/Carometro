@@ -24,12 +24,12 @@ export class cadastraraluno extends React.Component {
               <button className={estilos["btn-voltar1"]}>Voltar</button>
             </Link>
           </div>
-          <div className="form-groupRe">
-            <div className={estilos["formRe"]}>
+          <div className={estilos["formRe"]}>
               <label>Nome completo</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Ex: Gustavo Lazaro Silveira dos Santos"></input>
+              <input className={estilos["input-cadastro-nome"]} type="text" placeholder=" Ex: Gustavo Lazaro Silveira dos Santos"></input>
             </div> 
-
+          <div className={estilos["form-containerRe"]}>
+          <div className="form-groupRe">
             <div className={estilos["formRe"]}>
               <label>Turma</label>
               <select className={estilos["selectRe"]} >
@@ -57,7 +57,8 @@ export class cadastraraluno extends React.Component {
               <label>Telefone</label>
               <input className={estilos["input-cadastro"]} type="number" accept="*" placeholder="Ex: 0000-0000"></input>
             </div>
-
+            </div>
+            <div className="form-groupRe">
             <div className={estilos["formRe"]}>
               <label>Celular</label>
               <input className={estilos["input-cadastro"]} type="number" placeholder="Ex: (000) 00000-0000"></input>
@@ -73,6 +74,8 @@ export class cadastraraluno extends React.Component {
               <input className={estilos["input-cadastro"]} type="date" name="Matrícula"></input>
             </div>
 
+            
+            </div>
             <div className={estilos["formRe"]}>
             <label>Foto do Aluno</label>
             <div className={estilos["dzu-dropzone"]}>
@@ -80,7 +83,7 @@ export class cadastraraluno extends React.Component {
                 <Dropzone />
               </form>
             </div>
-            </div>
+          </div>
           </div>
           <div className={estilos["bot-containerRe"]}>
               <button type="button" className={estilos["btn-end1"]}>Finalizar</button>
