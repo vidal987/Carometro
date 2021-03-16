@@ -24,11 +24,13 @@ export class cadastraraluno extends React.Component {
               <button className={estilos["btn-voltar1"]}>Voltar</button>
             </Link>
           </div>
-          <div className={estilos["formRe"]}>
+
+          
+          <div className={estilos["form-containerRe"]}>
+            <div className={estilos["formRe"]}>
               <label>Nome completo</label>
               <input className={estilos["input-cadastro-nome"]} type="text" placeholder=" Ex: Gustavo Lazaro Silveira dos Santos"></input>
             </div> 
-          <div className={estilos["form-containerRe"]}>
           <div className="form-groupRe">
             <div className={estilos["formRe"]}>
               <label>Turma</label>
