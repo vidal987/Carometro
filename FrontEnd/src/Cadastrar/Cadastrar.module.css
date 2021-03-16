@@ -45,13 +45,13 @@ body {
     font-weight: 500;
     background: #FF4646;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     font-size: large;
     color: #FAFAFA;
   }
 
-  .btn-voltar:hover {
+  .btn-voltar1:hover {
     background: #b63333;
     transition: 0.2s;
   }
