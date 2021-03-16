@@ -30,9 +30,22 @@ export class cadastraraluno extends React.Component {
               <input className={estilos["input-cadastro"]} type="text" placeholder="Nome Completo"></input>
             </div> 
 
-            <div className={estilos["selectRe"]}>
+            <div className={estilos["formRe"]}>
               <label>Turma</label>
-              <select className={estilos["input-cadastro"]} type="text" placeholder="Turma"></select>
+              <select className={estilos["selectRe"]} >
+                <option value=""> </option>
+                <optgroup label="Diurno">
+                  <option value="">1DT</option>
+                  <option value="">2DT</option>
+                  <option value="">1MP</option>
+                  <option value="">2MP</option>
+                </optgroup>
+                <optgroup label="Noturno">
+                  <option value="">3DT</option>
+                  <option value="">3MP</option>
+                </optgroup>
+                
+              </select>
             </div>
 
             <div className={estilos["formRe"]}> 
