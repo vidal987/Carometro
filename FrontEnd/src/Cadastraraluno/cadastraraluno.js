@@ -27,7 +27,7 @@ export class cadastraraluno extends React.Component {
           <div className="form-groupRe">
             <div className={estilos["formRe"]}>
               <label>Nome completo</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Ex: Paulo da Silva"></input>
+              <input className={estilos["input-cadastro"]} type="text" placeholder="Ex: Gustavo Lazaro Silveira dos Santos"></input>
             </div> 
 
             <div className={estilos["formRe"]}>
@@ -50,22 +50,22 @@ export class cadastraraluno extends React.Component {
 
             <div className={estilos["formRe"]}> 
               <label>Matricula</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Matrícula"></input>
+              <input className={estilos["input-cadastro"]} type="number" placeholder="Ex: 0000000001"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>Telefone</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Telefone"></input>
+              <input className={estilos["input-cadastro"]} type="number" accept="*" placeholder="Ex: 0000-0000"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>Celular</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="(000) 00000-0000"></input>
+              <input className={estilos["input-cadastro"]} type="number" placeholder="Ex: (000) 00000-0000"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>E-mail</label>
-              <input className={estilos["input-cadastro"]} type="text" name="Turma" placeholder="example@example.com"></input>
+              <input className={estilos["input-cadastro"]} type="text" name="Turma" placeholder="Ex: example@example.com"></input>
             </div>
 
             <div className={estilos["formRe"]}>
