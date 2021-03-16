@@ -64,13 +64,11 @@ export class cadastraraluno extends React.Component {
             <label>Foto do Aluno</label>
             <Dropzone />
             </div>
-
-            <div className={estilos["bot-container1"]}>
-              <button type="button" className={estilos["btn-end"]}>Finalizar</button>
-              <button type="button" className={estilos["btn-add-new"]}>Adicionar novo</button>
-            </div>
-            
           </div>
+          <div className={estilos["bot-containerRe"]}>
+              <button type="button" className={estilos["btn-end1"]}>Finalizar</button>
+              <button type="button" className={estilos["btn-add-new1"]}>Adicionar novo</button>
+            </div>
         </div>
       </div>
          );

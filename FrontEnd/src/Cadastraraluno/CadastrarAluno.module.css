@@ -8,14 +8,10 @@
     border-radius: 10px;
     background-color: #FFFF;
     box-shadow: 2px 2px 10px #5e6470;
-    justify-content: center;
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
     margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
     padding: 5%;
 }
 
@@ -29,8 +25,8 @@
     padding-right: 5%; */
 }
 
-.bot-container1{
-    width: 100%;
+.bot-containerRe{
+    width:  100%;
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
@@ -59,13 +55,12 @@
   }
 
   .form-groupRe {
-      width: 100%;
-      padding: 5%;
-      justify-content: center;
+    width: 100%;
+    padding: 5%;
   }
 
-  .btn-end, .btn-add-new {
-    width: 100%;
+  .btn-end1, .btn-add-new1 {
+    width: fit-content;
     font-weight: 500;
     background: #FF4646;
     border: none;
@@ -75,7 +70,7 @@
     color: #FAFAFA;
   }
 
-  .btn-end:hover, .btn-add-new:hover {
+  .btn-end1:hover, .btn-add-new1:hover {
     background: #b63333;
     transition: 0.5s;
   }
@@ -86,9 +81,10 @@
   }
 
   .formRe {
-    width: 100%;
+    width: 50%;
     margin-right: 5%;
-    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .form2 {
