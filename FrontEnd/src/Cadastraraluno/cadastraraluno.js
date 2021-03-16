@@ -27,7 +27,7 @@ export class cadastraraluno extends React.Component {
           <div className="form-groupRe">
             <div className={estilos["formRe"]}>
               <label>Nome completo</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Nome Completo"></input>
+              <input className={estilos["input-cadastro"]} type="text" placeholder="Ex: Paulo da Silva"></input>
             </div> 
 
             <div className={estilos["formRe"]}>
