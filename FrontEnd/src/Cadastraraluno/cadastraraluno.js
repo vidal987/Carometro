@@ -27,42 +27,46 @@ export class cadastraraluno extends React.Component {
           <div className="form-groupRe">
             <div className={estilos["formRe"]}>
               <label>Nome completo</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Nome Completo" />
+              <input className={estilos["input-cadastro"]} type="text" placeholder="Nome Completo"></input>
             </div> 
 
-            <div className={estilos["formRe"]}>
+            <div className={estilos["selectRe"]}>
               <label>Turma</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Turma" />
+              <select className={estilos["input-cadastro"]} type="text" placeholder="Turma"></select>
             </div>
 
             <div className={estilos["formRe"]}> 
               <label>Matricula</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Matrícula" />
+              <input className={estilos["input-cadastro"]} type="text" placeholder="Matrícula"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>Telefone</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="Telefone" />
+              <input className={estilos["input-cadastro"]} type="text" placeholder="Telefone"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>Celular</label>
-              <input className={estilos["input-cadastro"]} type="text" placeholder="(00) 00000-0000" />
+              <input className={estilos["input-cadastro"]} type="text" placeholder="(000) 00000-0000"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>E-mail</label>
-              <input type="text" name="Turma" placeholder="E-mail" />
+              <input className={estilos["input-cadastro"]} type="text" name="Turma" placeholder="example@example.com"></input>
             </div>
 
             <div className={estilos["formRe"]}>
               <label>Data de Nascimento</label><br></br>
-              <input type="date" name="Matrícula"/>
+              <input className={estilos["input-cadastro"]} type="date" name="Matrícula"></input>
             </div>
 
             <div className={estilos["formRe"]}>
             <label>Foto do Aluno</label>
-            <Dropzone />
+            <div className={estilos["dzu-dropzone"]}>
+              <form>
+                <Dropzone />
+              </form>
+            </div>
             </div>
           </div>
           <div className={estilos["bot-containerRe"]}>

@@ -13,6 +13,8 @@
     margin-bottom: 5%;
     margin-top: 5%;
     padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .top-container1 {
@@ -78,11 +80,12 @@
   .input-cadastro {
       width: 100%;
       padding: 5%;
+      box-shadow: 2px 2px 4px #BABABA;
   }
 
   .formRe {
-    width: 50%;
-    margin-right: 5%;
+    width: 100%;
+    margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -92,17 +95,20 @@
       margin-top: 3%;
   }
 
-  .form1 label, .form2 label{
+  .formRe label, .form2 label, .selectRe label{
+    width: 100%;
     font-size: large;
     font-weight: 500;
   }
 
-  div.dzu-dropzone {
-    width: 50%;
-    padding: 1%;
+  .dzu-dropzone {
+    width: 100%; 
+    margin-left: -20px;
     border: none;
     border-radius: 5px;
     background-color: #DADADA;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     overflow: hidden;
     }
