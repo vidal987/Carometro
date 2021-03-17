@@ -239,14 +239,7 @@ div.acesso label.label h6 {
      margin-bottom: 0;
 }
 
-@media (max-width: 1240px) {
- .home-aluno{
-     max-width: 900px;
- }
-}
-
-@media (max-width: 1200px) {
-
+@media (max-width: 1980px) {
     div.acesso {
         margin-left: -10px;
     }
@@ -274,7 +267,58 @@ div.acesso label.label h6 {
         margin-left: 140px;
         margin-top: 20px;
         width: 240px;
-        margin-left: -120px;
+        margin-left: -330px;
+        margin-bottom: 30px;
+        height: 40px;
+        border: solid #FF4646;
+        overflow: hidden;
+        text-align: center;
+    
+    }
+   }
+
+
+@media (max-width: 1240px) {
+ .home-aluno{
+     max-width: 900px;
+ }
+}
+
+@media (max-width: 1300px) {
+
+    .home-aluno{
+        max-width: 900px;
+    }
+   
+
+    div.acesso {
+        margin-left: -10px;
+    }
+
+    div.acesso h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    
+    div.acesso label.label{
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 0;
+        margin: 0;
+        padding-top: 10px;
+        margin-right: 30px;
+        margin-left: -10px;
+    }
+
+    div.dzu-dropzone {
+        margin-left: 140px;
+        margin-top: 20px;
+        width: 240px;
+        margin-left: -190px;
         margin-bottom: 30px;
         height: 40px;
         border: solid #FF4646;

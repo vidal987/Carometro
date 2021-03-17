@@ -138,7 +138,3 @@ display: block;
     background: #b63333;
     transition: 0.5s;
   }
-
-  .btn-concluir, .btn-voltar3, .btn-cadastrarcurso {
-    box-shadow: 2px 2px 4px #BABABA;
-  }
