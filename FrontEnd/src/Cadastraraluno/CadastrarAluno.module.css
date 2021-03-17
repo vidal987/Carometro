@@ -156,3 +156,7 @@
         color: inherit;
         visibility: visible;
     }
+
+    .btn-add-new1, .btn-end1, .btn-voltar1 {
+      box-shadow: 2px 2px 4px #BABABA;
+    }
