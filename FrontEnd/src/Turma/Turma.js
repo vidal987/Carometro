@@ -33,7 +33,6 @@ export default class Turma extends React.Component{
         <Header/>
         <div className="homecontainer">
       
-          <div className="container-homebtn">
           <h3 className="page-title4">Selecione um Curso</h3>
           <Link to="./Cadastrar" style={{ color: '#FFF', textDecoration: 'none' }}>
           <button type="button" className="btn-voltar4">
@@ -41,8 +40,8 @@ export default class Turma extends React.Component{
               <div class="grid-container">
                 <div class="bloc-1" style={{textAlign: "center", verticalAlign: "middle" }}>
                     <Button className="btn-turmas" variant="primary">CT Desenvolvimento de Sistemas</Button>{' '}
-                    <Button className="btn-turmas" variant="primary">CT Mecânica de Precisão</Button>{' '}
-                    <Button className="btn-turmas" variant="primary">CT Qualidade</Button>{' '}
+                    <Button className="btn-turmas" variant="primary">CT Mecânica de Precisão</Button>{' '}<br></br>
+                    <Button className="btn-turmas" variant="primary">CT Qualidade</Button>{' '}<br></br>
                     <Button className="btn-turmas" variant="primary">CT Redes de Computadores</Button>{' '}
                     <Button className="btn-turmas" variant="primary">Assistente CT de Vendas</Button>{' '}       
                 </div>
@@ -62,7 +61,7 @@ export default class Turma extends React.Component{
               </div>
           </div>       
         </div>
-        </div>   
+
       
       );
    }

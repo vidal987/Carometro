@@ -2,139 +2,139 @@
 
 /* Container principal da página*/
 .homecontainer {
-    width: 50%;
-    height: fit-content;
-    border-radius: 10px;
-    background-color: #FFFF;
-    box-shadow: 2px 2px 10px #5e6470;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-  }
+  width: 50%;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: #FFFF;
+  box-shadow: 2px 2px 10px #5e6470;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
 
 /* Div que controla todas as palavras dentro do Homecontainer */  
 .form-cturma{
-    width: 100%;
-    margin-bottom: 5%;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    padding-right: 5%;
+  width: 100%;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 5%;
 }
 
 /* Título  cadastrar Curso */
 .page-title3 {
-    font-size: x-large;
-    width: 60%;
-    text-align: left;
-  }
+  font-size: x-large;
+  width: 60%;
+  text-align: left;
+}
 
 /* Palavras nome do curso e Períodos */
 label.span-cturma{
-    width: 100%;
-    display: inline;
-    margin-left: 10px;
-    margin-top: 10%;
-    text-align: left;
+  width: 100%;
+  display: inline;
+  margin-left: 10px;
+  margin-top: 10%;
+  text-align: left;
 }
 
 /* Tamanho do input nome do curso e alinhamento */
 .input-cturma {
-    margin-left: 0px;
-    width: 74%;
+  margin-left: 0px;
+  width: 74%;
 }
 
 .section-checkbox-cadastro{
-    margin-bottom: 0px;
-    margin-left: 10px;
-    margin-right: 0px;
-    float: left;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+  float: left;
 }
 
 input{
-    margin-top: 1%;
-    float: left;
-    margin-left: -20px;  
-    margin-right: 10px;
+  margin-top: 1%;
+  float: left;
+  margin-left: -20px;  
+  margin-right: 10px;
 }
 
 .label-checkbox {
-    margin-right: 0px;
-    float: left;
-    margin-right: 0px;
+  margin-right: 0px;
+  float: left;
+  margin-right: 0px;
 }
 
 
 /* Palavras manhå, tarde e noite */
 input[type=radio] + label {
-margin-top: 0%;
-margin-left: -60px;
+margin-top: 2%;
+margin-left: -50px;
 margin-right: 0%;
-width: 20px;
+width:10px;
 display: block;
 }
 
 
 .btn-voltar3 {
-    width: 100%;
-    font-weight: 500;
-    background: #FF4646;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: large;
-    color: #FAFAFA;
-  }
-  
-  
-  .btn-voltar3:hover {
-    background: #b63333;
-    transition: 0.5s;
+  width: 100%;
+  font-weight: 500;
+  background: #FF4646;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
+}
+
+
+.btn-voltar3:hover {
+  background: #b63333;
+  transition: 0.5s;
 }
 
 .bot-container4{
-    width: 100%;
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: large;
-  }
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: large;
+}
 
-  .btn-concluir{
-    width: 100%;
-    font-weight: 500;
-    background: #FF4646;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: large;
-    color: #FAFAFA;
-  }
-  
-  .btn-concluir:hover {
-    background: #b63333;
-    transition: 0.5s;
-  }
-  
-  .btn-cadastrarcurso{
-    width: 100%;
-    font-weight: 500;
-    background: #FF4646;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: large;
-    color: #FAFAFA;
-  }
-  
-  .btn-cadastrarcurso:hover {
-    background: #b63333;
-    transition: 0.5s;
-  }
+.btn-concluir{
+  width: 100%;
+  font-weight: 500;
+  background: #FF4646;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
+}
+
+.btn-concluir:hover {
+  background: #b63333;
+  transition: 0.5s;
+}
+
+.btn-cadastrarcurso{
+  width: 100%;
+  font-weight: 500;
+  background: #FF4646;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
+}
+
+.btn-cadastrarcurso:hover {
+  background: #b63333;
+  transition: 0.5s;
+}

@@ -41,30 +41,28 @@
 
 .grid-container {
   align-items: left;
-  width: 50%;
-  margin-left: -30px;
-  margin-right: 120px;
+  margin-left: -80px; 
 }
 
+
 .bloco-2 {
-  width: 310%;
-  height: 94%;
-  margin-top: 23px;
-  margin-right: 10px;
+  width: 190%;
+  height: 95%;
+  margin-top: 12%;
+  margin-right: 30px;
+  margin-left: -60px;
   background-color:#DADADA;
 }
 
 .btn-turmas{
-  width: 300px;
+  width: auto;
   height: 70px;
-  border-radius: 10px;   
 }
 
 
 .MuiButton-label {
-  margin-left: -40px;
-  color: green;
-  font-weight: 200;
+  font-size: small;
+  font-weight: bold;
 }
 
 
@@ -82,6 +80,11 @@
   box-shadow: #5e6470;
 }
 
+.CardTurma:hover {
+    background: #FF4646;
+    transition: 0.5s;
+}
+
 .CardTurma span{
   margin-left: 15px;
 }
@@ -90,16 +93,35 @@
   text-align: left;
   height: 40px;
   width: 50px;
-  margin-left: -150px;
+  margin-left: -250px;
   margin-top: 15px;
   color: #FF4646;
 }
 
 .bloco-2 h4 {
-  margin-left: 0px;
+  margin-left: -110px;
   margin-top: -30px;
   margin-bottom: 20px;
 }
 
+.bloc-1 {
+  width: 200px;
+  margin-top: 5%;
+  margin-right: 95px;
+}
+
+.bloc-1 .btn-turmas {
+  margin-left: 10px;
+  margin-right: 60px;
+  width: 110%;
+  font-weight: 500;
+  margin-top: 5%;
+  background-color: #DADADA;
+}
+
+.bloc-1 .btn-turmas:hover {
+  background: #FF4646;
+  transition: 0.5s;
+}
 
 /* Fim do CSS da página Turmas.js */
