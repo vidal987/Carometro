@@ -73,8 +73,9 @@ input{
 
 /* Palavras manhå, tarde e noite */
 input[type=radio] + label {
-margin-top: 0%;
-margin-left: -60px;
+margin-top: 5%;
+margin-left: -40px;
+margin-bottom: 20px;
 margin-right: 0%;
 width: 20px;
 display: block;

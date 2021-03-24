@@ -34,7 +34,7 @@ export default class Turma extends React.Component{
         <div className="homecontainer">
       
           <h3 className="page-title4">Selecione um Curso</h3>
-          <Link to="./Cadastrar" style={{ color: '#FFF', textDecoration: 'none' }}>
+          <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
           <button type="button" className="btn-voltar4">
             Voltar </button></Link>
               <div class="grid-container">

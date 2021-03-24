@@ -2,7 +2,7 @@
 
 div.container{
     width: max-content;
-    height: 800px;
+    height: 900px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -16,29 +16,17 @@ div.container{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
-  padding: 10px;
-  padding-top: 0px;
-  margin-top: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
 }
 
 img.students{
     border-radius: 10px;
-    width: 250px;
+    width: 220px;
     height: 200px;
     border: solid #FFFF 
-}
-
-.top-container{
-  float: right;
-  overflow: hidden;
-}
-
-.page-title{
-  margin-top: 25px;
-}
-
-.btn-voltar{
-  margin: auto;  
 }
 
 .container {
@@ -49,10 +37,70 @@ img.students{
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
-  margin-top:120px; 
+  margin-top:90px; 
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.botao .btn-voltar5 {
+  width: 9%;
+  font-weight: 500;
+  background: #FF4646;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-left: 700px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
+}
+
+
+.btn-voltar5:hover {
+  background: #b63333;
+  transition: 0.5s;
+}
+
+
+.botao .btn-voltar6 {
+  width: 7%;
+  font-weight: 500;
+  background: #FF4646;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: large;
+  color: #FAFAFA;
+}
+
+
+.btn-voltar6:hover {
+  background: #b63333;
+  transition: 0.5s;
+}
+
+.botao .page-title6 {
+  font-size: x-large;
+  width: 60%;
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: -35px;
+  margin-left: 30px;
+}
+
+.container h6 {
+  height: 30px;
+  margin-left: 3px;
+  margin-top: 3px;
+  padding-top: 5px;
+  background-color: #FF4646;
+  width: 100%;
+}
+
+.container h6:hover {
+  background: #b63333;
+  transition: 0.5s;
 }

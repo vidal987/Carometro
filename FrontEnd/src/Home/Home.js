@@ -30,10 +30,10 @@ export class Home extends React.Component {
                   </Link>
 
               {/* Botão para a página Listar */}
-                <Link to="/Lista"> 
+                <Link to="/Ocorrencias"> 
                   <button className={estilos["home-btn1"]}>                 
                     <img src={list} className={estilos["home-icon1"]} />
-                    <span className={estilos["span-home"]}>Listar</span>
+                    <span className={estilos["span-home"]}>Ocorrências</span>
                   </button>
                 </Link>
                 
@@ -52,8 +52,16 @@ export class Home extends React.Component {
               
                 <Link to="/Turma" className={estilos["link-home"]}>
                   <button className={estilos["home-btn1"]}>                  
-                    <img src={turma} className={estilos["home-icon1"]}/>
+                  <img src={list} className={estilos["home-icon1"]} />
                     <span className={estilos["span-home"]}>Turmas</span>
+                  </button>
+                </Link>
+               
+                 {/* Botão para página Formandos */}
+                <Link to="/Turma" className={estilos["link-home"]}>
+                  <button className={estilos["home-btn1"]}>                  
+                    <img src={turma} className={estilos["home-icon1"]}/>
+                    <span className={estilos["span-home"]}>Formandos</span>
                   </button>
                 </Link>
                 

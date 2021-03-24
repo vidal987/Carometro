@@ -28,7 +28,7 @@ div.form {
 .home-aluno h1{
     font-size: x-large;
     width: 60%;
-    margin-left: -30px;
+    margin-left:20px;
 }
 
 
@@ -89,7 +89,7 @@ label.label{
   }
 
 /* Botão voltar no topo de tela */
-button.btn-voltar {
+button.btn-1 {
     width: 100%;
     font-weight: 500;
     background: #FF4646;
@@ -101,7 +101,7 @@ button.btn-voltar {
   }
   
   
-  .btn-voltar:hover {
+  .btn-1:hover {
     background: #b63333;
     transition: 0.5s;
   }
@@ -289,7 +289,7 @@ div.acesso label.label h6 {
     .home-aluno{
         max-width: 900px;
     }
-   
+
 
     div.acesso {
         margin-left: -10px;
