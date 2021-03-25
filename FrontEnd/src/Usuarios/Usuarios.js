@@ -21,7 +21,7 @@ export class Usuarios extends React.Component {
         <Header />
         <div className={estilos["container"]}>
           <div className={estilos["top"]}>
-            <h3>Usuários</h3>
+            <h4>Usuários</h4>
             <div className={estilos["div-voltar"]}>
               <Link to="/Home" className={estilos["voltar"]}>Voltar</Link>
             </div>
