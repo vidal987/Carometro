@@ -30,11 +30,16 @@ body {
     font-size: medium;
     border-radius: 5px;
     text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #FF4646;
 }
 
 .voltar:hover {
     transition: 0.2s;
-    background-color: #ff1111;
+    border: 2px solid #FF4646;
+    background-color: #FAFAFA;
+    color: #FF4646;
+    text-decoration: none;
 }
 
 .top {

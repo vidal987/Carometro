@@ -22,9 +22,9 @@ export class Usuarios extends React.Component {
         <div className={estilos["container"]}>
           <div className={estilos["top"]}>
             <h3>Usuários</h3>
-            <Link to="/Home" className={estilos["div-voltar"]}>
-              <button className={estilos["voltar"]}>Voltar</button>
-            </Link>
+            <div className={estilos["div-voltar"]}>
+              <Link to="/Home" className={estilos["voltar"]}>Voltar</Link>
+            </div>
           </div>
               <table>
                 <thead>

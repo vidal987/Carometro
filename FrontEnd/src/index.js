@@ -8,7 +8,6 @@ import Turma from './Turma/Turma.js';
 import { cadastraraluno } from './Cadastraraluno/cadastraraluno.js';
 import { CadastrarTurma } from './CadastrarTurma/CadastrarTurma.js';
 import { Cadastrar } from './Cadastrar/Cadastrar.js';
-import { Options } from './Options/Options.js';
 import { Aluno } from './Aluno/Aluno.js';
 import Login from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
@@ -24,7 +23,6 @@ ReactDOM.render(
                 <Route path="/" exact={true} component={App} />
                 <Route path="/Home" exact={true} component={Home} />
                 <Route path="/Turma" exact={true} component={Turma} />
-                <Route path="/Options" exact={true} component={Options} />
                 <Route path="/CadastrarTurma" exact={true} component={CadastrarTurma} />
                 <Route path="/cadastraraluno" exact={true} component={cadastraraluno} />
                 <Route path="/Cadastrar" exact={true} component={Cadastrar} />
