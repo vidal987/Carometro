@@ -23,7 +23,7 @@ body {
     width: auto;
     min-height: 40px;
     background-color: #FF4646;
-    border: 0px;
+    border: 2px solid #FF4646;
     padding: 10px;
     color: #FFF;
     font-weight: bold;
@@ -35,8 +35,9 @@ body {
 
 .voltar:hover {
     transition: 0.4s;
-    background-color: #FF0000;
-    color: #FFF;
+    background-color: #FAFAFA;
+    border: 2px solid #FF4646;
+    color: #FF4646;
     text-decoration: none;
 }
 
