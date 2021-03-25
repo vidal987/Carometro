@@ -16,6 +16,7 @@ import { Lista } from './Lista/Lista.js';
 import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx';
 import { NovaOcorrencia } from './Ocorrencias/NovaOcorrencia.jsx';
 import Import from './Importar/Importar.jsx';
+import { Usuarios }  from './Usuarios/Usuarios';
 
 ReactDOM.render(
         <BrowserRouter>
@@ -34,6 +35,7 @@ ReactDOM.render(
                 <Route path="/Ocorrencias" exact={true} component={Ocorrencias} />
                 <Route path="/NovaOcorrencia" exact={true} component={NovaOcorrencia} />
                 <Route path="/Importar" exact={true} component={Import} />
+                <Route path="/Usuarios" exact={true} component={Usuarios} />
             </Switch>
         </ BrowserRouter>
     , document.getElementById('root'));
