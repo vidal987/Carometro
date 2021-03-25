@@ -102,6 +102,10 @@ table thead {
     font-weight: 600;
 }
 
+table thead tr th {
+    padding: 10px
+}
+
 table tbody tr {
     border: none;
     display: table-row;
@@ -117,30 +121,3 @@ table tbody tr td {
     font-weight: 500;
     padding: 10px;
 }
-
-table tbody tr td:before {
-    display: none;
-}
-
-/* @media all and (max-width: 800px) {
-    table tbody tr td {
-        display: block;
-        text-align: right;
-    }
-
-    table {
-        border: none;
-    }
-
-    table thead {
-        display: none;
-    }
-
-    table tbody tr {
-        margin-bottom: 10px;
-        display: block;
-        background: #EEE;
-        border-radius: 10px;
-        padding: 10px;
-    }
-} */
