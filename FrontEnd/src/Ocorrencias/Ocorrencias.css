@@ -5,16 +5,14 @@
 
 
 .ocorrencias-container {
-  width: 60%;
-  height: fit-content;
-  border-radius: 10px;
-  background-color: #FFFF;
-  box-shadow: 2px 2px 10px #5e6470;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%; 
-  margin-bottom: 5%;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  background-color: #FAFAFA;
+  margin: 40px auto 40px auto;
   padding: 5%;
+  box-shadow: 4px 4px 30px #DDDDDD;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
 }
