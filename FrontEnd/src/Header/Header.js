@@ -17,14 +17,15 @@ export class Header extends Component {
         return (
             <>
            <Navbar className="Navbar" bg="light" expand="lg">
-                <Navbar.Brand href="/"><img src={senai} className="logo" /></Navbar.Brand>
-                <span style={{width: 300}}>Gerenciador de Ocorrências</span> 
+                <Navbar.Brand href="/Home"><img src={senai} className="logo" />
+                    <span> Gerenciador de Ocorrências</span>
+                </Navbar.Brand>
+                
                 <li class="nav-item dropdown">
                     <Dropdown>
                         <Dropdown.Toggle variant="light" id="dropdown-basic">
                             Recursos
                         </Dropdown.Toggle>
-
                         <Dropdown.Menu>
                             <Dropdown.Item href="/Importar">Importar Arquivos</Dropdown.Item>
                             <Dropdown.Item href="/Relatórios">Relatórios</Dropdown.Item>
@@ -36,7 +37,7 @@ export class Header extends Component {
                         </Dropdown.Menu>
                     </Dropdown>
                 </li>    
-                <UserAvatar size="48" name="Will Binns-Smith" src="http://placeimg.com/80/80/people" />      
+                <UserAvatar className="img-avatar" size="48" name="Will Binns-Smith" src="http://placeimg.com/80/80/people" />
             </Navbar>
             </>
         );

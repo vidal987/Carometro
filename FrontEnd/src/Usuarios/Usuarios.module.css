@@ -1,0 +1,123 @@
+.nav-container {
+    margin-top: 0px;
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    background-color: #FAFAFA;
+    margin: 40px auto 40px auto;
+    padding: 5%;
+    box-shadow: 4px 4px 30px #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.voltar {
+    width: auto;
+    min-height: 40px;
+    background-color: #FF4646;
+    border: 2px solid #FF4646;
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    transition: 0.4s;
+    background-color: #FAFAFA;
+    border: 2px solid #FF4646;
+    color: #FF4646;
+    text-decoration: none;
+}
+
+.top {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.top h4 {
+    width: 90%;
+}
+
+.div-voltar {
+    width: 10%;
+}
+
+table tr td button {
+    border: none;
+    max-width: 30px;
+    max-height: 30px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 1px;
+}
+
+table tr td button img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.editar {
+    background-color: #BBB;
+}
+
+.editar:hover {
+    transition: 0.4s;
+    background-color: #AAA;
+}
+
+.excluir {
+    background-color: #FF4646;
+}
+
+.excluir:hover {
+    transition: 0.4s;
+    background-color: #FF0000;
+}
+
+table {
+    border: none;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+table thead {
+    display: table-header-group;
+    font-weight: 600;
+}
+
+table thead tr th {
+    padding: 10px
+}
+
+table tbody tr {
+    border: none;
+    display: table-row;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #EEE;
+}
+
+table tbody tr td {
+    display: table-cell;
+    position: relative;
+    font-weight: 500;
+    padding: 10px;
+}

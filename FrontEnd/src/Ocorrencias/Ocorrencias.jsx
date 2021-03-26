@@ -118,15 +118,16 @@ export class Ocorrencias extends React.Component {
               <Link to="/NovaOcorrencia">
                 <button className="btn-add-ocorrencia">Nova ocorrência</button>
               </Link>
+              <button className="btn-filtrar">
+                  Filtrar
+                </button>
             </div>
             <div className="ocorrencias-header">
               <h1 className="h1-ocorrencia">Ocorrências</h1>
 
               <div className="buttons-adicionar-filtrar">
                 {/* Botão filtrar ocorrências */}
-                <button className="btn-filtrar">
-                  Filtrar
-                </button>
+                
               </div>
             </div>
 
