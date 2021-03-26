@@ -23,6 +23,7 @@ ReactDOM.render(
              <Switch>
                 <Route path="/" exact={true} component={App} />
                 <Route path="/Home" exact={true} component={Home} />
+                <Route path="/Turma/:id" exact={true} component={Lista} />
                 <Route path="/Turma" exact={true} component={Turma} />
                 <Route path="/CadastrarTurma" exact={true} component={CadastrarTurma} />
                 <Route path="/cadastraraluno" exact={true} component={cadastraraluno} />
@@ -31,7 +32,8 @@ ReactDOM.render(
                 <Route path="/Aluno" exact={true} component={Aluno} />
                 <Route path="/Curso" exact={true} component={Curso} />
                 <Route path="/Lista" exact={true} component={Lista} />
-                <Route path="/Formandos" exact={true} component={Formandos} />
+                <Route path="/Formandos/:id" exact={true} component={Lista} />
+                <Route path="/Formandos" exact={true} component={Turma} />
                 <Route path="/Ocorrencias" exact={true} component={Ocorrencias} />
                 <Route path="/NovaOcorrencia" exact={true} component={NovaOcorrencia} />
                 <Route path="/Importar" exact={true} component={Import} />

@@ -26,7 +26,6 @@ export class Lista extends React.Component {
         return (
             <div className="nav-container">
                 <Header/>
-<<<<<<< HEAD
             <div class="container-lista"> 
             <div class="botao">
             <h1 className="page-title6">Alunos</h1>
@@ -149,106 +148,6 @@ export class Lista extends React.Component {
                     </div>
                 </div>
           
-=======
-            <div class="container"> 
-            <div class="botao">
-            <h1 className="page-title6">Alunos</h1>
-            <Link style={{ color: '#FFF', textDecoration: 'none' }}>
-                  <button type="button" className="btn-voltar5">
-                    Imprimir</button></Link>
-            <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
-                  <button type="button" className="btn-voltar6">
-                    Voltar</button></Link>
-            <div class="grid-container">
-                        <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                         <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                       <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                       <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                    <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>
->>>>>>> e6a19ed55e9602f567a3862e043e15e81bd23747
            
         );
     }
