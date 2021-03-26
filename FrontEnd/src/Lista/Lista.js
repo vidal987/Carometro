@@ -7,249 +7,71 @@ import axios from 'axios';
 
 export class Lista extends React.Component {
     state = {
-        aluno: [],
-        foto: []
-      }
-//Mais uma vez tentando pegar dados da API
+        erro: null,
+        loading: null,
+        dados: null
+    };
+
+    //Mais uma vez tentando pegar dados da API
     componentDidMount() {
-        axios.get(`https://localhost:5001/api/Alunos`)
-        .then(res => {
-            const aluno = res.data; 
-            const foto = res.data;           
-            this.setState({ 
-                aluno, 
-                foto 
-            });
-        })
-    }  
+        const buscarLista = async () => {
+            try {
+                this.setState({ erro: null, dados: null, loading: true });
+
+                const res = await fetch('http://localhost:8000/api/alunos', {
+                    method: "GET",
+                    headers: {
+                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE2NzkwMjkwLCJleHAiOjE2MTY3OTc0OTB9.uSKiO166KUwfECgny7Gzf4cGMESICAASwZyWYNU6f9U"
+                    }
+                });
+
+                const json = await res.json();
+
+                if (res.status !== 200) throw new Error(json.mensagem);
+
+                this.setState({ dados: json });
+
+            } catch ({ message }) {
+                this.setState({ erro: message, dados: null });
+            } finally {
+                this.setState({ loading: false });
+            }
+        };
+
+        buscarLista();
+    }
     render() {
         return (
             <div className="nav-container">
-                <Header/>
-<<<<<<< HEAD
-            <div class="container-lista"> 
-            <div class="botao">
-            <h1 className="page-title6">Alunos</h1>
-            <button type="button" className="btn-voltar5">Imprimir</button>
-            <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
-            <button type="button" className="btn-voltar6"> Voltar</button></Link>
-            </div>
+                <Header />
+                <div class="container-lista">
+                    <div class="botao">
+                        <h1 className="page-title6">Alunos</h1>
+                        <button type="button" className="btn-voltar5">Imprimir</button>
+                        <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
+                            <button type="button" className="btn-voltar6"> Voltar</button></Link>
+                    </div>
 
+                    <ul class="grid-container">
+                        { this.state.loading && <p>Carregando...</p> }
 
-            <ul class="grid-container">
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
+                        { this.state.erro && <p>{this.state.erro}</p>}
 
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
-                    <li>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
-                        <img src={this.state.foto} className="students" />
-                        </div>
-                       <h6>Aluno</h6>
-                       </Link>
-                    </li>
-
+                        { this.state.dados && this.state.dados.map(({ id, nome, foto }) => {
+                            return (
+                        <li key={`aluno_${id}`}> 
+                            <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>
+                                <div className="img-container">
+                                    <img src={`http://localhost:8000/${foto}`} className="students" />
+                                </div>
+                                <h6>{ nome }</h6>
+                            </Link>
+                        </li>
+                        )
+                    })}
                     </ul>
-                    </div>
-                </div>
-          
-=======
-            <div class="container"> 
-            <div class="botao">
-            <h1 className="page-title6">Alunos</h1>
-            <Link style={{ color: '#FFF', textDecoration: 'none' }}>
-                  <button type="button" className="btn-voltar5">
-                    Imprimir</button></Link>
-            <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
-                  <button type="button" className="btn-voltar6">
-                    Voltar</button></Link>
-            <div class="grid-container">
-                        <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                         <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                       <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                       <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                    <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    <div>
-                        <a href="./Ocorrencias">
-                        <img src={this.state.foto} className="students" />
-                        { this.state.aluno.map(aluno => <span>{aluno.name}</span>)}
-                        </a>
-                        <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}><h6>Aluno</h6></Link>
-                    </div>
-                    </div>
                 </div>
             </div>
-            </div>
->>>>>>> e6a19ed55e9602f567a3862e043e15e81bd23747
-           
         );
     }
 }
