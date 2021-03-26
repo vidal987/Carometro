@@ -30,10 +30,10 @@ export class Home extends React.Component {
                   </Link>
 
               {/* Botão para a página Listar */}
-                <Link to="/Ocorrencias"> 
+                <Link to="/Usuarios"> 
                   <button className={estilos["home-btn1"]}>                 
                     <img src={list} className={estilos["home-icon1"]} />
-                    <span className={estilos["span-home"]}>Ocorrências</span>
+                    <span className={estilos["span-home"]}>Usuários</span>
                   </button>
                 </Link>
                 
