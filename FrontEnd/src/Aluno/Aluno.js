@@ -47,7 +47,7 @@ export class Aluno extends React.Component {
           <div className="home-aluno">          
                                 <h1>Cadastrar usuário</h1>
                                 <Link to="./" style={{ color: '#FFF', textDecoration: 'none' }}>
-                                 <button type="button" className="btn-voltar">
+                                 <button type="button" className="btn-1">
                                  Voltar </button></Link>
                             
                                  <div className="form">  

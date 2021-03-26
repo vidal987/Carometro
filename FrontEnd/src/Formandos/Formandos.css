@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap%27");
 
-div.container-lista{
+div.container-formandos{
   width: 100%;
   max-width: 1200px;
   text-align: center;
@@ -9,7 +9,7 @@ div.container-lista{
   margin: 10px auto 60px auto;
 }
 
-.grid-container {
+.grid-containerformandos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -19,7 +19,7 @@ div.container-lista{
   margin-left: 0px;
 }
 
-.img-container{
+.img-containerformandos{
     width: 100%;
     height: 200px;
     border: 1px solid #222;
@@ -30,13 +30,13 @@ div.container-lista{
     align-items: center;
 }
 
-.img-container img {
+.img-containerformandos img {
   width: 100%;
   max-width: 100%;
   display: block;
 }
 
-.container-lista {
+.container-formandos {
   min-height: 750px;
   border-radius: 10px;
   background-color: #FFFF;
@@ -52,13 +52,13 @@ div.container-lista{
   flex-direction: column;
 }
 
-.botao {
+.botao-formandos{
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.botao .btn-voltar5 {
+.botao-formandos .btn-voltarformandos5 {
   width:  auto;
   font-weight: bold;
   background: #FF4646;
@@ -71,13 +71,13 @@ div.container-lista{
 }
 
 
-.btn-voltar5:hover {
+.btn-voltarformandos5:hover {
   background: #b63333;
   transition: 0.5s;
 }
 
 
-.botao .btn-voltar6 {
+.botao-formandos .btn-voltarformandos6 {
   font-weight: bold;
   width: 100%;
   background: #FF4646;
@@ -89,18 +89,18 @@ div.container-lista{
 }
 
 
-.btn-voltar6:hover {
+.btn-voltarformandos6:hover {
   background: #b63333;
   transition: 0.5s;
 }
 
-.botao .page-title6 {
+.botao-formandos .page-titleformandos {
   font-size: x-large;
   text-align: left;
   margin-right: auto;
 }
 
-.container-lista h6 {
+.container-formandos h6 {
   height: 30px;
   border: 1px solid #FF4646;
   border-radius: 0 0 10px 10px;
@@ -115,11 +115,11 @@ div.container-lista{
 }
 
 @media (max-width: 1240px) {
-  div.container-lista {
+  div.container-formandos {
     max-width: 960px;
   }
 
-  .grid-container {
+  .grid-containerformandos {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -127,32 +127,32 @@ div.container-lista{
 
 @media (max-width: 1000px) {
 
-  div.container-lista {
+  div.container-formandos {
     max-width: 640px;
   }
   
-  .grid-container {
+  .grid-containerformandos {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 680px) {
-  div.container-lista {
+  div.container-formandos {
     max-width: 300px;
     min-height: 400px;
   }
 
-  .grid-container {
+  .grid-containerformandos {
     margin-top: 20px;
     grid-template-columns: 1fr;
   }
 
-  .botao {
+  .botao-formandos {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .botao .page-title6 {
+  .botao-formandos .page-titleformandos{
     width: 100%;
     margin-bottom: 20px;
     text-align: center;

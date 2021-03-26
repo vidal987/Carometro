@@ -1,11 +1,11 @@
 import React from 'react';
 // import aluna from '../img/aluna.jpg';
-import './Lista.css';
+import './Formandos.css';
 import { Header } from '../Header/Header.js';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-export class Lista extends React.Component {
+export class Formandos extends React.Component {
     state = {
         aluno: [],
         foto: []
@@ -26,19 +26,19 @@ export class Lista extends React.Component {
         return (
             <div className="nav-container">
                 <Header/>
-            <div class="container-lista"> 
-            <div class="botao">
-            <h1 className="page-title6">Alunos</h1>
-            <button type="button" className="btn-voltar5">Imprimir</button>
+            <div class="container-formandos"> 
+            <div class="botao-formandos">
+            <h1 className="page-titleformandos">Formandos - 3DT/2021/Tarde</h1>
+            <button type="button" className="btn-voltarformandos5">Imprimir</button>
             <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
-            <button type="button" className="btn-voltar6"> Voltar</button></Link>
+            <button type="button" className="btn-voltarformandos6"> Voltar</button></Link>
             </div>
 
 
-            <ul class="grid-container">
+            <ul class="grid-containerformandos">
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -47,7 +47,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -56,7 +56,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -65,7 +65,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -74,7 +74,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -83,7 +83,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -92,7 +92,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -101,7 +101,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -110,7 +110,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -119,7 +119,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -128,7 +128,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>
@@ -137,7 +137,7 @@ export class Lista extends React.Component {
 
                     <li>
                         <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>    
-                        <div className="img-container">
+                        <div className="img-containerformandos">
                         <img src={this.state.foto} className="students" />
                         </div>
                        <h6>Aluno</h6>

@@ -13,6 +13,7 @@ import { Aluno } from './Aluno/Aluno.js';
 import Login from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
 import { Lista } from './Lista/Lista.js';
+import { Formandos } from './Formandos/Formandos.js';
 import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx';
 import { NovaOcorrencia } from './Ocorrencias/NovaOcorrencia.jsx';
 import Import from './Importar/Importar.jsx';
@@ -31,6 +32,7 @@ ReactDOM.render(
                 <Route path="/Aluno" exact={true} component={Aluno} />
                 <Route path="/Curso" exact={true} component={Curso} />
                 <Route path="/Lista" exact={true} component={Lista} />
+                <Route path="/Formandos" exact={true} component={Formandos} />
                 <Route path="/Ocorrencias" exact={true} component={Ocorrencias} />
                 <Route path="/NovaOcorrencia" exact={true} component={NovaOcorrencia} />
                 <Route path="/Importar" exact={true} component={Import} />
