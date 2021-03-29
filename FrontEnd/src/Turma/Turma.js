@@ -20,7 +20,7 @@ export default class Turma extends React.Component{
       definirTurmas = (id_curso) => {
         const curso  = this.state.dados.find((curso) => curso.id === id_curso)
 
-        if(curso) this.setState( {turmas: curso});
+        if (curso) this.setState({ turmas: curso.turmas });
       }
  
       componentDidMount() {
@@ -31,16 +31,16 @@ export default class Turma extends React.Component{
                 const res = await fetch('http://localhost:8000/api/cursos', {
                     method: "GET",
                     headers: {
-                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE3MDM5OTI3LCJleHAiOjE2MTcwNDcxMjd9.neM13uCi-2zobSO2iJ-eYrTmnbX9it4f7hMBHzyklhw"
+                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE3MDQ2NzMzLCJleHAiOjE2MTcwNTM5MzN9.7DkVLUGUpxlbBdcwgj5IQnLX9nz-q7SsgxJ7EjOQXWM"
                     }
                 });
 
                 const json = await res.json();
-                
 
                 if (res.status !== 200) throw new Error(json.mensagem);
 
                 this.setState({ dados: json });
+                this.definirTurmas(json[0].id);
 
             } catch ({ message }) {
                 this.setState({ erro: message, dados: null });
@@ -63,34 +63,31 @@ export default class Turma extends React.Component{
           <Link to="./Home" style={{ color: '#FFF', textDecoration: 'none' }}>
           <button type="button" className="btn-voltar4">
             Voltar </button></Link>
-              <div class="grid-container">
+              <div className="grid-container">
 
-                <div class="bloc-1" style={{textAlign: "center", verticalAlign: "middle" }}>
+                <div className="bloc-1" style={{textAlign: "center", verticalAlign: "middle" }}>
                          {this.state.dados && this.state.dados.map(({nome, id})=> (
-                           <Button key={`curso_${id}`} className="btn-turmas" variant="primary">{nome}</Button>
+                           <Button key={`curso_${id}`} className="btn-turmas" onClick={() => this.definirTurmas(id)}>
+                             {nome}
+                            </Button>
                          )) }
                 </div>
 
-                <div class="bloco-2" style={{textAlign: "center", verticalAlign: "middle" }}>    
-                <FaGraduationCap className="FaGraduationCap" />          
-                <h4>Turmas</h4>   
-                 <div className="CardTurma">
-                <span>1DT</span>
-                 </div>
-                <div className="CardTurma">
-                 <span>2DT</span>
-                 </div>
-                 <div className="CardTurma">
-                 <span>3DT</span>
-                 </div>
+                <div className="bloco-2" style={{textAlign: "center", verticalAlign: "middle" }}>    
+                  <FaGraduationCap className="FaGraduationCap" />
+
+                  <h4>Turmas</h4>
+
+                  { this.state.turmas && this.state.turmas.map(({ id, nome }) => (
+                    <div key={`turma_${id}`} className="CardTurma"> 
+                      <span>{nome}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
           </div>       
         </div>
-
-      
       );
    }
-
 }
 
