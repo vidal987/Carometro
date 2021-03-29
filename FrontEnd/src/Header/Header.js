@@ -21,7 +21,7 @@ export class Header extends Component {
                     <span> Gerenciador de Ocorrências</span>
                 </Navbar.Brand>
                 
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                     <Dropdown>
                         <Dropdown.Toggle variant="light" id="dropdown-basic">
                             Recursos
