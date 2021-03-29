@@ -115,7 +115,7 @@ export class Ocorrencias extends React.Component {
             </div>
             <div className="btn-novaocorrencia-container">
               {/* Botão nova ocorrência */}
-              <Link to="">
+              <Link to="/NovaOcorrencia">
                 <button className="btn-add-ocorrencia">Nova ocorrência</button>
               </Link>
               <button className="btn-filtrar">
