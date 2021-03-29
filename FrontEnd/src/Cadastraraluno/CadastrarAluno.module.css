@@ -92,12 +92,14 @@
   .input-cadastro {
       width: 100%;
       padding: 5%;
-      box-shadow: 2px 2px 4px #BABABA;
+      background-color: #EAEAEA;
+      box-shadow: 6px 6px 20px 0px #EAEAEA;
   }
 
   .input-cadastro-nome {
+        background-color: #EAEAEA;
         width: 100%;
-        box-shadow: 2px 2px 4px #BABABA;
+        box-shadow: 6px 6px 20px 0px #EAEAEA;
   }
 
   .formRe { 
@@ -115,8 +117,8 @@
     width: 100%;
     min-height: 40px;
     color: #4D4D4D;
-    background-color: #DADADA;
-    box-shadow: 2px 2px 4px #BABABA;
+    background-color: #EAEAEA;
+    box-shadow: 6px 6px 20px 0px #EAEAEA;
     border: none;
     border-radius: 5px;
     margin-left: -20px;
@@ -139,8 +141,8 @@
     margin-left: -20px;
     border: none;
     border-radius: 5px;
-    background-color: #DADADA;
-    box-shadow: 2px 2px 4px #BABABA;
+    background-color: #EAEAEA;
+    box-shadow: 6px 6px 20px 0px #EAEAEA;
     overflow: hidden;
     }
 
@@ -155,7 +157,7 @@
         color: inherit;
         visibility: visible;
     }
-
+/* 
     .btn-add-new1, .btn-end1, .btn-voltar1 {
       box-shadow: 2px 2px 4px #BABABA;
-    }
+    } */

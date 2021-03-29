@@ -1,7 +1,20 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "./Ocorrencias.css";
+import estilos from './NovaOcorrencia.module.css'
 import { Header } from '../Header/Header.js';
+
+// const ModalOcorrencia = ({ setState }) => {
+
+//     const fundoRef = React.useRef();
+
+//     const fecharModal = ({ target }) => {
+//         if (target === fundoRef.current) setState(false);
+//     }
+
+//     return (
+//         <h1>Teste</h1>
+//     );
+// };
 
 export class NovaOcorrencia extends React.Component {
     constructor(props) {
@@ -9,17 +22,17 @@ export class NovaOcorrencia extends React.Component {
     }
     render() {
       return (
-          <div className="container">
+          <div className={estilos.container}>
               <Header/>
-        <div className="ocorrencias-container">
-            <div className="left-content">
+        <div className={estilos["ocorrencias-container"]}>
+            <div className={estilos["left-content"]}>
 
-            <div className="top-container">
-                <h1 className="title">Nova ocorrência</h1>
+            <div className={estilos["top-container"]}>
+                <h1 className={estilos.title}>Nova ocorrência</h1>
             </div>
 
-            <div className="form">
-                <div className="titulo">
+            <div className={estilos.form}>
+                <div className={estilos.titulo}>
                     <label>Título</label>
                     <input type="text" placeholder="Título da ocorrência"></input>
                 </div>

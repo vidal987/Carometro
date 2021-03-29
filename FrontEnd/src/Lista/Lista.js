@@ -21,7 +21,7 @@ export class Lista extends React.Component {
                 const res = await fetch('http://localhost:8000/api/alunos', {
                     method: "GET",
                     headers: {
-                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE2NzkwMjkwLCJleHAiOjE2MTY3OTc0OTB9.uSKiO166KUwfECgny7Gzf4cGMESICAASwZyWYNU6f9U"
+                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE3MDM3ODkyLCJleHAiOjE2MTcwNDUwOTJ9.5yVrOnZldVPAHTGHIEeBGNUNy4AQn7VtaGofWv88w_M"
                     }
                 });
 

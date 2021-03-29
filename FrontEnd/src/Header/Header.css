@@ -1,11 +1,12 @@
 
 .Navbar{
     padding-bottom: 0px;
-    box-shadow: 4px 4px 30px #DDDDDD;
+    box-shadow: 4px 4px 20px #DDDDDD;
     display: flex;
     width: 100%;
-    background: #FFF;
+    background: #FAFAFA;
     justify-content: space-between;
+    margin-bottom: 3%;
 }
 
 .logo{
@@ -30,12 +31,13 @@
 }
 
 #dropdown-basic {
-    box-shadow: 4px 4px 20px #EEE;
+    box-shadow: 6px 6px 20px 0px #EAEAEA;
     text-align: center;
     border: none;
 }
 
 #dropdown-basic:hover{
     background-color: #EEE;
+    transition: 0.5s;
     border: none;
 }

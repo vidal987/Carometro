@@ -28,8 +28,8 @@ body {
 }
 
 .home-btn1 {
-    background-color: #DADADA;
-    box-shadow: 2px 2px 20px #DDD;
+    background-color: #EAEAEA;
+    box-shadow: 6px 6px 20px 0px #EAEAEA;
     max-width: 140px;
     height: 140px;
     border: 0px solid;
@@ -41,8 +41,8 @@ body {
 }
 
 .home-btn1:hover {
-    background-color: #CACACA;
-    transition: 0.2s;
+  background-color: #dadada;
+  transition: 0.5s;
     
   }
 
