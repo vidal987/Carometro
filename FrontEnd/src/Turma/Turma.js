@@ -10,23 +10,49 @@ import axios from 'axios';
 
 export default class Turma extends React.Component{
       state = {
-        nome: [],
-        idCurso: [],
+        erro: null,
+        loading: null,
+        dados: null,
+        turmas: null  
 
       }
 
-    componentDidMount() {
-        axios.get(`https://app20201221151730.azurewebsites.net/api/Turmas`)
-        .then(res => {
-            const nome = res.data; 
-            const turmas = res.data; 
-            const idCurso = res.data;           
-            this.setState({ 
-                nome, 
-                idCurso 
-            });
-        })
-    }  
+      definirTurmas = (id_curso) => {
+        const curso  = this.state.dados.find((curso) => curso.id === id_curso)
+
+        if(curso) this.setState( {turmas: curso});
+      }
+ 
+      componentDidMount() {
+        const buscarLista = async () => {
+            try {
+                this.setState({ erro: null, dados: null, loading: true });
+
+                const res = await fetch('http://localhost:8000/api/cursos', {
+                    method: "GET",
+                    headers: {
+                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE3MDM5OTI3LCJleHAiOjE2MTcwNDcxMjd9.neM13uCi-2zobSO2iJ-eYrTmnbX9it4f7hMBHzyklhw"
+                    }
+                });
+
+                const json = await res.json();
+                
+
+                if (res.status !== 200) throw new Error(json.mensagem);
+
+                this.setState({ dados: json });
+
+            } catch ({ message }) {
+                this.setState({ erro: message, dados: null });
+            } finally {
+                this.setState({ loading: false });
+            }
+        };
+
+        buscarLista();
+    }
+
+
     render() {
       return (
         <div className="nav-container">
@@ -38,13 +64,13 @@ export default class Turma extends React.Component{
           <button type="button" className="btn-voltar4">
             Voltar </button></Link>
               <div class="grid-container">
+
                 <div class="bloc-1" style={{textAlign: "center", verticalAlign: "middle" }}>
-                    <Button className="btn-turmas" variant="primary">CT Desenvolvimento de Sistemas</Button>{' '}
-                    <Button className="btn-turmas" variant="primary">CT Mecânica de Precisão</Button>{' '}<br></br>
-                    <Button className="btn-turmas" variant="primary">CT Qualidade</Button>{' '}<br></br>
-                    <Button className="btn-turmas" variant="primary">CT Redes de Computadores</Button>{' '}
-                    <Button className="btn-turmas" variant="primary">Assistente CT de Vendas</Button>{' '}       
+                         {this.state.dados && this.state.dados.map(({nome, id})=> (
+                           <Button key={`curso_${id}`} className="btn-turmas" variant="primary">{nome}</Button>
+                         )) }
                 </div>
+
                 <div class="bloco-2" style={{textAlign: "center", verticalAlign: "middle" }}>    
                 <FaGraduationCap className="FaGraduationCap" />          
                 <h4>Turmas</h4>   
