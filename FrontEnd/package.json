@@ -28,6 +28,7 @@
     "react-scripts": "^3.4.4",
     "react-spring": "^8.0.20",
     "react-user-avatar": "^1.10.0",
+    "reactstrap": "^8.9.0",
     "xlsx": "^0.16.9"
   },
   "scripts": {

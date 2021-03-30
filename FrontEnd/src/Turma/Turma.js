@@ -31,7 +31,7 @@ export default class Turma extends React.Component{
                 const res = await fetch('http://localhost:8000/api/cursos', {
                     method: "GET",
                     headers: {
-                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE3MDQ2NzMzLCJleHAiOjE2MTcwNTM5MzN9.7DkVLUGUpxlbBdcwgj5IQnLX9nz-q7SsgxJ7EjOQXWM"
+                        "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjE3MTI1NDIwLCJleHAiOjE2MTcxMzI2MjB9.0GB4REZcx60tSP5f2TUcLdTfHlnu3zSHPdR_sl1NKVQ"
                     }
                 });
 
