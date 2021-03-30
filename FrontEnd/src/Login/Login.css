@@ -109,7 +109,7 @@ input {
 };
 
 .login-form {
-    box-shadow: 4px 4px 30px #DDDDDD;
+box-shadow: 4px 4px 30px #DDDDDD;
   border-radius: 5px;
   border: solid 0px;
 }
