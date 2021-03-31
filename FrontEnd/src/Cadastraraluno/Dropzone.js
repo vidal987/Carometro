@@ -1,38 +1,52 @@
-import React from "react";
-import 'react-dropzone-uploader/dist/styles.css';
-import Dropzone from 'react-dropzone-uploader'
+import React from 'react';
+import estilos from './Dropzone.module.css';
+import dropzone_bg from './dropzone_bg.svg';
 
-const DropZone = () => {
+const Dropzone = ({ img, setImg }) => {
+    const handleImgChange = ({ target }) => {
+        if (target.files[0]) {
+            setImg({
+                preview: URL.createObjectURL(target.files[0]),
+                raw: target.files[0]
+            });
+        }
+    };
 
-  const ImageAudioVideo = () => {
-    const getUploadParams = ({ meta }) => {
-      const url = 'https://httpbin.org/post'
-      return { url, meta: { fileUrl: `${url}/${encodeURIComponent(meta.name)}` } }
-    }
-  
-    const handleChangeStatus = ({ meta }, status) => {
-      console.log(status, meta)
-    }
-  
-    const handleSubmit = (files, allFiles) => {
-      console.log(files.map(f => f.meta))
-      allFiles.forEach(f => f.remove())
-    }
-  
+    const handleDrop = (e) => {
+        e.preventDefault();
+        let file;
+
+        if (e.dataTransfer.items) {
+            if (e.dataTransfer.items[0].kind === 'file') {
+                file = e.dataTransfer.items[0].getAsFile();
+            }
+        } else {
+            file = e.dataTransfer.files[0];
+        }
+
+        setImg({
+            preview: URL.createObjectURL(file),
+            raw: file
+        });
+    };
+
     return (
-      <Dropzone
-      getUploadParams={getUploadParams}
-      onChangeStatus={handleChangeStatus}
-      onSubmit={handleSubmit}
-      accept="image/*,audio/*,video/*"
-      inputContent={(files, extra) => (extra.reject ? 'Image, audio and video files only' : 'Drag Files')}
-      styles={{
-        dropzoneReject: { borderColor: 'red', backgroundColor: '#DAA' },
-        inputLabel: (files, extra) => (extra.reject ? { color: 'red' } : {}),
-      }}
-    />
-    )
-}}
-export default DropZone;
+        <label
+            className={`${estilos.Dropzone} ${img.preview ? estilos.ativo : ''}`}
+            htmlFor="arquivo"
+            style={{backgroundImage: `url(${img.preview || dropzone_bg })`, marginRight: 0}}
+            onDrop={handleDrop}
+            onDragOver={(e) => e.preventDefault()}
+        >
+            <button
+                className={`${estilos.btnFechar} ${img.preview ? estilos.ativo : ''}`}
+                onClick={() => setImg('')}
+            ></button>
 
-  
+            <div className={estilos.preview}></div>
+            <input type="file" name="arquivo" id="arquivo" onChange={handleImgChange} />
+        </label>
+    );
+};
+
+export default Dropzone;
