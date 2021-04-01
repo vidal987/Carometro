@@ -15,7 +15,7 @@ export class Cadastrar extends React.Component {
             <div className={estilos["container-homepage"]}>
               <div className={estilos["top-container1"]}>
                 <h1 className={estilos["page-title1"]}>Cadastrar</h1>
-                <div clasName={estilos["link-div"]}>
+                <div className={estilos["link-div"]}>
                   <Link to="/Home">
                     <button className={estilos["btn-voltar1"]}>Voltar</button>
                   </Link>

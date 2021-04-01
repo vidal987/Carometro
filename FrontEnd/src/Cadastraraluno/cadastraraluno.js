@@ -18,6 +18,9 @@ export class cadastraraluno extends React.Component {
       matricula: "",
       id_turma: "",
       img: "",
+      loadingSelect: null,
+      optionsSelect: null,
+      erroSelect: null,
     };
   }
   
@@ -34,7 +37,7 @@ export class cadastraraluno extends React.Component {
     
     try {
       const dados = new FormData();
-
+      
       dados.append("nome", this.state.nome);
       dados.append("email", this.state.email);
       dados.append("matricula", this.state.matricula);
@@ -62,6 +65,44 @@ export class cadastraraluno extends React.Component {
     }
   };
 
+  componentDidMount() {
+    const carregarSelect = async () => {
+      try {
+        this.setState({ erroSelect: null, optionsSelect: null, loadingSelect: true });
+
+        const res = await fetch('http://localhost:8000/api/turmas', {
+          method: "GET",
+          headers: {
+            "x-access-token": window.localStorage.getItem("token") || ""
+          }
+        });
+
+        const json = await res.json();
+        console.log(json);
+
+        if (res.status !== 200) throw new Error(json.mensagem);
+
+        const turmasAtiva = json.filter(({ formado }) => !formado);
+        const turmaFormatada = turmasAtiva.map(({ id, nome, periodo }) => ({ id, nome, periodo }));
+
+        const optionsSelect = {
+          diurno: turmaFormatada.filter(({ periodo }) => periodo === "manhã"),
+          vesputino: turmaFormatada.filter(({ periodo }) => periodo === "tarde"),
+          noturno: turmaFormatada.filter(({ periodo }) => periodo === "noite"),
+        };
+
+        this.setState({ optionsSelect });
+      } catch ({ message }) {
+        this.setState({ erroSelect: message, optionsSelect: null });
+        console.log(message);
+      } finally {
+        this.setState({ loadingSelect: false });
+      }
+    };
+
+    carregarSelect();
+  }
+
   render() {
     return (
       <div className="nav-container1">
@@ -73,69 +114,74 @@ export class cadastraraluno extends React.Component {
               <button className={estilos["btn-voltar1"]}>Voltar</button>
             </Link>
           </div>
-
-          <form 
-            onSubmit={this.handleSubmit}
-            className={estilos["form-containerRe"]}
-            >
-            <div className={estilos["formRe"]}>
-              <label>Nome completo</label>
-
-              <input 
+          
+          { this.state.optionsSelect && (
+            <form className={estilos["form-containerRe"]}
+              onSubmit={this.handleSubmit}
+              className={estilos["form-containerRe"]}
+              >
+              <div className={estilos["formRe"]}>
+                <label>Nome completo</label>
+                
+                <input
                 className={estilos["input-cadastro-nome"]} 
                 type="text" 
                 placeholder=" Ex: Gustavo Lazaro Silveira dos Santos"
                 name="nome" 
                 value={this.state.nome}
                 onChange={this.handleChange}
-              ></input>
+                ></input>
+              </div>
+              <div className="form-groupRe">
+                <div className={estilos["formRe"]}>
+                  <label>Turma</label>
 
-            </div>
-            <div className="form-groupRe">
-              <div className={estilos["formRe"]}>
-                <label>Turma</label>
-
-                <select 
+                  <select 
                   name="id_turma" 
                   value={this.state.id_turma}
                   onChange={this.handleChange}
                   className={estilos["selectRe"]} 
-                >
-                  <option value=""> </option>
-                  <optgroup label="Diurno">
-                    <option value="">1DT</option>
-                    <option value="">2DT</option>
-                    <option value="">1MP</option>
-                    <option value="">2MP</option>
-                  </optgroup>
-                  <optgroup label="Noturno">
-                    <option value="">3DT</option>
-                    <option value="">3MP</option>
-                  </optgroup>
-                </select>
+                  >
+                    <option value=""> </option>
+                    <optgroup label="Diurno">
+                      { this.state.optionsSelect.diurno.map(({ id, nome }) => (
+                        <option key={`turma_${id}`} value={id} >{nome}</option>
+                      )) }
+                    </optgroup>
 
-              </div>
+                    <optgroup label="Vesputino">
+                    { this.state.optionsSelect.vesputino.map(({ id, nome }) => (
+                        <option key={`turma_${id}`} value={id} >{nome}</option>
+                      )) }
+                    </optgroup>
 
-              <div className={estilos["formRe"]}>
-                <label>Telefone</label>
+                    <optgroup label="Noturno">
+                    { this.state.optionsSelect.noturno.map(({ id, nome }) => (
+                        <option key={`turma_${id}`} value={id} >{nome}</option>
+                      )) }
+                    </optgroup>
+                  </select>
+                </div>
+                
+                <div className={estilos["formRe"]}>
+                  <label>Telefone</label>
 
-                <input 
-                  name="telefone" 
-                  value={this.state.telefone}
-                  onChange={this.handleChange}
-                  className={estilos["input-cadastro"]} 
-                  type="text" 
-                  accept="*" 
-                  placeholder="Ex: 0000-0000"
-                ></input>
+                  <input 
+                    name="telefone" 
+                    value={this.state.telefone}
+                    onChange={this.handleChange}
+                    className={estilos["input-cadastro"]} 
+                    type="text" 
+                    accept="*" 
+                    placeholder="Ex: 0000-0000"
+                  ></input>
+                </div>
 
-              </div>
+                <div className={estilos["formRe"]}>
+                  <label>E-mail</label>
 
-              <div className={estilos["formRe"]}>
-                <label>E-mail</label>
-
-                <input 
-                  className={estilos["input-cadastro"]} 
+                  <input 
+                    className={estilos["input-cadastro"]} 
                   type="text" 
                   name="email" 
                   value={this.state.email}
@@ -201,7 +247,8 @@ export class cadastraraluno extends React.Component {
               <button className={estilos["btn-end1"]}>Finalizar</button>
               <button type="button" className={estilos["btn-add-new1"]}>Adicionar novo</button>
             </div>
-          </form>
+            </form>
+          )}
 
         </div>
       </div>
