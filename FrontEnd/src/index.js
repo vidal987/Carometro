@@ -11,7 +11,7 @@ import { Cadastrar } from './Cadastrar/Cadastrar.js';
 import { Aluno } from './Aluno/Aluno.js';
 import Login from './Login/Login.js';
 import { Curso } from './Curso/Curso.js';
-import { Lista } from './Lista/Lista.js';
+import Lista from './Lista/Lista.js';
 import { Formandos } from './Formandos/Formandos.js';
 import { Ocorrencias } from './Ocorrencias/Ocorrencias.jsx';
 import { NovaOcorrencia } from './Ocorrencias/NovaOcorrencia';
