@@ -2,13 +2,13 @@ import React  from "react";
 import './Turma.css'
 import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { FaGraduationCap } from "@react-icons/all-files/fa/FaGraduationCap";
 import { Header } from '../Header/Header.js';
 import add from '../img/add.png';
 import axios from 'axios';
 
-export default class Turma extends React.Component{
+class Turma extends React.Component{
       state = {
         erro: null,
         loading: null,
@@ -24,6 +24,8 @@ export default class Turma extends React.Component{
       }
  
       componentDidMount() {
+        const { pathname } = this.props.location;
+        console.log(pathname);
         const buscarLista = async () => {
             try {
                 this.setState({ erro: null, dados: null, loading: true });
@@ -35,12 +37,26 @@ export default class Turma extends React.Component{
                     }
                 });
 
-                const json = await res.json();
+              const json = await res.json();
 
                 if (res.status !== 200) throw new Error(json.mensagem);
 
-                this.setState({ dados: json });
-                this.definirTurmas(json[0].id);
+                // Parte 1
+              const cursos = json.map((curso) => {
+
+                  // Parte 2
+              const turmas = curso.turmas.filter(({ formado }) => {
+                  return (pathname === '/Turma' ) ? !formado : formado;
+              });
+
+              //Parte 3
+              return { ...curso, turmas};
+
+              });
+                
+              
+                this.setState({ dados: cursos });
+                this.definirTurmas(cursos[0].id);
             } catch ({ message }) {
                 this.setState({ erro: message, dados: null });
             } finally {
@@ -90,3 +106,4 @@ export default class Turma extends React.Component{
    }
 }
 
+export default withRouter(Turma);

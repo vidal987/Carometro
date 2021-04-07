@@ -64,7 +64,7 @@ class Lista extends React.Component {
                         <li key={`aluno_${id}`}> 
                             <Link to="./Ocorrencias" style={{ color: '#FFF', textDecoration: 'none' }}>
                                 <div className="img-container">
-                                    <img src={`http://localhost:8000/${foto}`} className="students" />
+                                    <img src={`http://localhost:8000/${foto}`} className="students" alt="foto"/>
                                 </div>
                                 <h6>{ nome }</h6>
                             </Link>
