@@ -79,7 +79,7 @@ export default class Turma extends React.Component{
 
                   { this.state.turmas && this.state.turmas.map(({ id, nome }) => (
                     <div key={`turma_${id}`} className="CardTurma"> 
-                      <span>{nome}</span>
+                      <Link to={`/Turma/${id}`}>{nome}</Link>
                     </div>
                   ))}
                 </div>
